@@ -65,7 +65,7 @@ document.getElementById('getInTouchForm').addEventListener('submit', function(ev
   if (validateEmail(email)) {
     console.log("Email:", email);
     console.log("Message:", message);
-    document.getElementById('contactMessage').innerHTML = "Your message has been printed to console!";
+    document.getElementById('contactMessage').innerHTML = "Your message has been sent!";
     document.getElementById('getInTouchForm').reset();
   } else {
     document.getElementById('contactMessage').innerHTML = "Please enter a valid email address.";
