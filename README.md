@@ -1,7 +1,7 @@
 <h1 align="center">Hey 👋, I'm Manish Kumar</h1>
 <h3 align="center">A Backend developer from India! 🇮🇳🇮🇳</h3>
 
-<p align="left"> <a href="https://twitter.com/itz_manish02" target="blank"><img src="https://img.shields.io/twitter/follow/itz_manish02?logo=twitter&style=for-the-badge" alt="itz_manish02" /></a> </p>
+<p align="centre"> <a href="https://twitter.com/itz_manish02" target="blank"><img src="https://img.shields.io/twitter/follow/itz_manish02?logo=twitter&style=for-the-badge" alt="itz_manish02" /></a> </p>
 
 About Me :
 - 🌱 I’m currently learning **Spring Framework + DSA**
