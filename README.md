@@ -10,7 +10,7 @@ About Me :
 
 - 👨‍💻 My portfolio [Manish Kumar](https://imanish.netlify.app/)
 
-- 💬 My Skills **Java, JDBC, MySQL, Servlet Jsp, Little Html CSS Knowledge**
+- 💬 My Skills **Java, Spring Framework, DBMS, MySQL, Servlet Jsp, Little Knowledge Html CSS Python**
 
 - 📫 How to reach me **manish.business.com@gmail.com**
 
