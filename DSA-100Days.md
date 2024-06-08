@@ -1,7 +1,7 @@
 ## 100-Day Coding Plan for Mastering Data Structures and Algorithms
 
 ### Day -∞ to 0:
-- Stick to a programming language like C or C++. Ensure comfort with pointers/objects.
+- Stick to a programming language like C or Java , C++. Ensure comfort with pointers/objects.
 
 ### Day 1:
 - Understand the concept of Algorithmic complexity. Derive time and space complexity for code.
