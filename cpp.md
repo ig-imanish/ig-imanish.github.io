@@ -205,7 +205,7 @@
                std::cout << "Invalid day";
        }
        return 0;
-   }
+   } 
    ```
 
 #### **Exercise:**
