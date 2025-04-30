@@ -4,9 +4,9 @@
 <p align="centre"> <a href="https://twitter.com/itz_manish02" target="blank"><img src="https://img.shields.io/twitter/follow/itz_manish02?logo=twitter&style=for-the-badge" alt="itz_manish02" /></a> </p>
 
 About Me :
-- 🌱 I’m currently learning **Spring Framework + DSA**
+- 🌱 Hi, I'm a Backend developer and a Java enthusiast. I love creating and adding features to web applications that are user-friendly, responsive, and functional.
 
-- 👯 I’m looking for Some Learners on **Java Technologies!**
+- 👯 I'm always open to new opportunities and challenges that can help me grow as a developer and a person.
 
 - 👨‍💻 My portfolio [Manish Kumar](https://imanish.netlify.app/)
 
