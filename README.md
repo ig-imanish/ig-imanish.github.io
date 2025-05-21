@@ -1,5 +1,7 @@
 <h1 align="center">Hey 👋, I'm Manish Kumar</h1>
 <h3 align="center">A Backend developer from India! 🇮🇳🇮🇳</h3>
+<p align="left"> <img src="https://komarev.com/ghpvc/?username=ig-imanish&label=Profile%20views&color=0e75b6&style=flat" alt="ig-imanish" /> </p>
+
 
 <p align="centre"> <a href="https://twitter.com/itz_manish02" target="blank"><img src="https://img.shields.io/twitter/follow/itz_manish02?logo=twitter&style=for-the-badge" alt="itz_manish02" /></a> </p>
 
