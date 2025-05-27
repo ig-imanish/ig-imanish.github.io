@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Manish | Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/feather-icons"></script>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Roboto Mono', monospace;
+      background-color: #111111;
+    }
+
+    a {
+      color: #14b8a6;
+      text-decoration: none;
+      transition: text-decoration 0.3s ease;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body class="min-h-screen bg-[#111] text-white">
+
+  <!-- Navbar -->
+  <nav class="w-full bg-[#1e1e1e] shadow-md p-4 flex justify-between items-center fixed top-0 z-50">
+    <div class="flex items-center gap-3">
+      <img src="https://upload.wikimedia.org/wikipedia/en/4/41/Flag_of_India.svg" alt="Avatar" class="w-10 h-10 " />
+      <span class="text-lg font-bold">&lt;Manish Kumar/&gt;
+      </span>
+    </div>
+    <ul class="flex gap-6 text-sm">
+      <li><a href="#home" class="hover:text-teal-400">Home</a></li>
+      <li><a href="#resume" class="hover:text-teal-400">Resume</a></li>
+      <li><a href="#projects" class="hover:text-teal-400">Projects</a></li>
+      <li><a href="#contact" class="hover:text-teal-400">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Banner -->
+  <section id="home" class="pt-24 pb-16 flex flex-col items-center text-center px-4">
+    <h1 class="text-4xl md:text-5xl font-bold mb-4">Hi, I'm Manish</h1>
+    <p class="text-lg md:text-xl mb-6 max-w-2xl">A passionate developer from Punjab who loves solving real-world
+      problems with code.</p>
+    <a href="#contact" class="bg-teal-500 hover:bg-teal-600 text-white px-6 py-2 rounded-lg transition"
+      style="margin-bottom: -50px;">Contact Me</a>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section id="resume" class="p-6 pt-8 flex justify-center">
+
+    <div id="portfolio" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-[1200px] w-full"></div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="bg-[#111] text-white px-4 py-16" id="contact">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-[2fr_1.2fr] gap-10 items-start">
+
+      <!-- Contact Text + Form -->
+      <div class="space-y-6">
+        <div>
+          <h2 class="text-3xl font-semibold mb-2">Let's Connect</h2>
+          <p class="mb-4 text-gray-300">Feel free to reach out for collaborations or just a friendly hello 👋</p>
+        </div>
+        <div>
+          <form action="https://formspree.io/f/xgvklbln" method="POST" class="space-y-4">
+            <!-- <input type="text" name="name" placeholder="Your Name" required
+              class="w-full px-4 py-2 bg-[#1e1e1e] border border-gray-700 rounded text-white" /> -->
+            <input type="email" name="email" placeholder="Your Email" required
+              class="w-full px-4 py-2 bg-[#1e1e1e] border border-gray-700 rounded text-white" />
+            <textarea name="message" rows="5" placeholder="Your Message" required
+              class="w-full px-4 py-2 bg-[#1e1e1e] border border-gray-700 rounded text-white"></textarea>
+            <button type="submit"
+              class="bg-teal-500 hover:bg-teal-600 text-white px-6 py-2 rounded-lg transition">Send</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Social Links + Footer -->
+      <div class="flex flex-col justify-between h-full space-y-10 md:space-y-0 text-center md:text-left">
+        <!-- Social Media -->
+        <div class="space-y-4">
+          <h2 class="text-2xl font-semibold mb-2">Follow Me</h2>
+          <div class="flex flex-col gap-3 text-sm text-white font-mono">
+
+            <!-- GitHub -->
+            <a href="https://github.com/ig-imanish" target="_blank"
+              class="flex items-center gap-2 hover:text-teal-400 transition">
+              <i data-feather="github" class="text-white w-5 h-5"></i>
+              <span class="flex-1 border-b border-dotted border-gray-600 mx-2"></span>
+              @ig-imanish
+            </a>
+
+            <!-- LinkedIn -->
+            <a href="https://linkedin.com/in/imanish02" target="_blank"
+              class="flex items-center gap-2 hover:text-teal-400 transition">
+              <i data-feather="linkedin" class="text-[#0077B5] w-5 h-5"></i>
+              <span class="flex-1 border-b border-dotted border-gray-600 mx-2"></span>
+              @imanish02
+            </a>
+
+            <!-- Twitter -->
+            <a href="https://twitter.com/@itz_Manish02" target="_blank"
+              class="flex items-center gap-2 hover:text-teal-400 transition">
+              <i data-feather="twitter" class="text-[#1DA1F2] w-5 h-5"></i>
+              <span class="flex-1 border-b border-dotted border-gray-600 mx-2"></span>
+              @itz_Manish02
+            </a>
+
+            <!-- Dev.to -->
+            <a href="https://dev.to/ig-imanish" target="_blank"
+              class="flex items-center gap-2 hover:text-teal-400 transition">
+              <i data-feather="terminal" class="text-white w-5 h-5"></i>
+              <span class="flex-1 border-b border-dotted border-gray-600 mx-2"></span>
+              @ig-imanish
+            </a>
+
+            <!-- Email -->
+            <a href="mailto:work.manish02@yahoo.com" class="flex items-center gap-2 hover:text-teal-400 transition">
+              <i data-feather="mail" class="text-[#EA4335] w-5 h-5"></i>
+              <span class="flex-1 border-b border-dotted border-gray-600 mx-2"></span>
+              work.manish02@yahoo.com
+            </a>
+
+          </div>
+          <!-- Copyright -->
+          <div class="text-gray-400 text-sm md:mt-auto" style="margin-top: 90px;">
+            &copy; 2025 Manish. All rights reserved.
+            This site and its contents are protected by applicable copyright laws.
+
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <script>
+    feather.replace();
+    const portfolioData = {
+      resumeLink: "https://drive.google.com/file/d/1Zy0-b3lPi3U2QIiKzEkxrtZhRL1qTVv7/view",
+      downLink: "./ManishKumar.CV.SoftwareDev@latest.pdf",
+      aboutMe: {
+        name: "Manish Kumar",
+        location: "Punjab India",
+        description: "Hi! I'm Manish, a passionate backend developer from Punjab. I enjoy building software that solves real-world problems, and I'm always eager to learn new technologies and improve my skills.",
+        avatar: "https://avatars.githubusercontent.com/u/153966717?s=400&u=17e3493aa13f10c49e65d6cca22d117b1b0735dd&v=4"
+      },
+      education: [
+        {
+          degree: "B.Tech ( Computer Science & Endineering )",
+          institution: "Rayat bahra intitute of engineering and nano technology",
+          years: "2023-2027",
+          current: "4th Semester",
+          location: "Hoshiapur Punjab"
+        }
+      ],
+      experience: [
+        {
+          role: "Web Dev Intern",
+          company: "Jabsz Gaming Studios",
+          about: "Expert in game development and technology services company delivering high-quality web-based games, app dev, web dev solutions",
+          companyLink: "www.jabszgamingstudios.com",
+          period: "May 2025 - Present"
+        }
+      ],
+      skills: [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "React.js",
+        "C, C++",
+        "Java",
+        "JDBC",
+        "OOPs",
+        "DSA",
+        "Spring Security",
+        "Spring Jpa",
+        "Spring MVC",
+        "Thymeleaf",
+        "Servlet",
+        "Spring Boot",
+        "MySQL",
+        "MongoDB",
+
+      ],
+      devTools: [
+        "Git",
+        "GitHub",
+        "Postman",
+        "Swagger",
+        "VS Code",
+        "Linux",
+        "Windows",
+        "Vercel/Netlify/Render",
+        "Docker",
+        "IntelliJ IDEA",
+        "Maven"
+      ],
+      projects: [
+        {
+          name: "Blogging Website",
+          description: "A simple blog project enabling users to create, read, update, and delete (CRUD) blog posts from markdown, with authentication features to secure user accounts and manage access.",
+          url: "https://github.com/ig-imanish/BlogZone"
+        },
+        {
+          name: "Url Shortner",
+          description: "SHORTxURL is a Spring Boot web project that provides URL shortening functionality. It shortens your long URL with a custom name! Making sharing easier.",
+          url: "https://github.com/ig-imanish/SHORTxURL"
+        }
+      ]
+    };
+
+    const skillLinks = {
+      "HTML": "https://developer.mozilla.org/en-US/docs/Web/HTML",
+      "CSS": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+      "JavaScript": "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+      "React.js": "https://reactjs.org/",
+      "C, C++": "https://cplusplus.com/",
+      "Java": "https://www.oracle.com/java/",
+      "JDBC": "https://docs.oracle.com/javase/8/docs/technotes/guides/jdbc/",
+      "OOPs": "https://en.wikipedia.org/wiki/Object-oriented_programming",
+      "DSA": "https://www.geeksforgeeks.org/data-structures/",
+      "Spring Security": "https://spring.io/projects/spring-security",
+      "Spring Jpa": "https://spring.io/projects/spring-data-jpa",
+      "Spring MVC": "https://spring.io/guides/gs/serving-web-content/",
+      "Thymeleaf": "https://www.thymeleaf.org/",
+      "Servlet": "https://docs.oracle.com/javaee/7/tutorial/servlets.htm",
+      "Spring Boot": "https://spring.io/projects/spring-boot",
+      "MySQL": "https://www.mysql.com/",
+      "MongoDB": "https://www.mongodb.com/"
+    };
+
+    const devTools = {
+      "Git": "https://git-scm.com/",
+      "GitHub": "https://github.com/",
+      "Postman": "https://www.postman.com/",
+      "Swagger": "https://swagger.io/",
+      "VS Code": "https://code.visualstudio.com/",
+      "Linux": "https://www.linux.org/",
+      "Docker": "https://www.docker.com/"
+      ,
+      "IntelliJ IDEA": "https://www.jetbrains.com/idea/",
+      "Maven": "https://maven.apache.org/"
+      
+    }
+
+    const container = document.getElementById("portfolio");
+    container.innerHTML += `
+      <div id="about" class="rounded-lg bg-[#1e1e1e] shadow-lg p-6">
+        <h2 class="text-xl font-semibold mb-4 border-b border-gray-700 pb-2">About Me</h2>
+        <div class="flex items-center gap-4 mb-4">
+          <img src="${portfolioData.aboutMe.avatar}" alt="Avatar" class="w-16 h-16 rounded-full border-2 border-white" />
+          <div>
+            <p class="text-md font-bold">${portfolioData.aboutMe.name}</p>
+            <p class="text-sm text-gray-400">${portfolioData.aboutMe.location}</p>
+          </div>
+        </div>
+        <p class="text-sm leading-relaxed">${portfolioData.aboutMe.description}</p>
+      </div>
+    `;
+
+    const educationCard = document.createElement("div");
+    educationCard.className = "rounded-lg bg-[#1e1e1e] text-white shadow-lg p-6";
+    educationCard.innerHTML = `
+      <h2 class="text-xl font-semibold mb-4 border-b border-gray-700 pb-2">Education</h2>
+      <ul class="list-disc list-inside text-sm space-y-2">
+        ${portfolioData.education.map(edu => `
+          <li><strong>${edu.degree}</strong></li>
+           <li><strong>College</strong> - ${edu.institution}</li>
+           <li><strong>Location - </strong>${edu.location}</li>
+           <li><strong>Duration - </strong> (${edu.years})</li>
+          <li><strong>Current -</strong> ${edu.current}</li>
+          
+        `).join('')}
+      </ul>
+    `;
+    container.appendChild(educationCard);
+
+    const experienceCard = document.createElement("div");
+    experienceCard.className = "rounded-lg bg-[#1e1e1e] text-white shadow-lg p-6";
+    experienceCard.innerHTML = `
+      <h2 class="text-xl font-semibold mb-4 border-b border-gray-700 pb-2">Experience</h2>
+      <ul class="list-disc list-inside text-sm space-y-2">
+        ${portfolioData.experience.map(exp => `
+          <li><strong>Role - </strong> ${exp.role}</li>
+          <li><strong>Company - </strong> 
+            
+           <a href="https://${exp.companyLink}" 
+   target="_blank" 
+   class="text-teal-400 no-underline hover:underline">
+   ${exp.company}
+</a>
+            </li>
+           <li><strong>About - </strong> ${exp.about}</li>
+            <li><strong>Period - </strong> ${exp.period}</li>
+        `).join('')}
+      </ul>
+    `;
+    container.appendChild(experienceCard);
+
+    const skillsCard = document.createElement("div");
+    skillsCard.className = "rounded-lg bg-[#1e1e1e] text-white shadow-lg p-6";
+    skillsCard.innerHTML = `
+  <h2 class="text-xl font-semibold mb-4 border-b border-gray-700 pb-2">Skills</h2>
+  <div class="flex flex-wrap gap-2 text-sm">
+    ${portfolioData.skills.map(skill => {
+      const url = skillLinks[skill] || "#";
+      return `<a href="${url}" target="_blank" class="bg-gray-700 rounded px-3 py-1 hover:bg-teal-600 transition">${skill}</a>`;
+    }).join('')}
+  </div>
+`;
+    container.appendChild(skillsCard);
+
+    container.innerHTML += `
+      <div class="rounded-lg bg-[#1e1e1e] shadow-lg p-6">
+        <h2 class="text-xl font-semibold mb-4 border-b border-gray-700 pb-2">Dev Tools</h2>
+        <div class="flex flex-wrap gap-2 text-sm">
+          
+         ${portfolioData.devTools.map(skill => {
+      const url = devTools[skill] || "#";
+      return `<a href="${url}" target="_blank" class="bg-green-700 rounded px-3 py-1">${skill}</a>`;
+    }).join('')}
+        </div>
+      </div>
+    `;
+    // Resume Card
+    container.innerHTML += `
+      <div id="resume" class="rounded-lg bg-[#1e1e1e] shadow-lg p-6">
+        <h2 class="text-xl font-semibold mb-4 border-b border-gray-700 pb-2">Resume</h2>
+        <p class="text-sm mb-3">You can view or download my resume using the button below.</p>
+        <a href="${portfolioData.resumeLink}" target="_blank" class="inline-block bg-blue-600 hover:bg-blue-700 text-white text-sm px-4 py-2 rounded">View ManishKumar.CV@latest.gdrive</a>
+       <br> <br>
+         <a href="${portfolioData.downLink}" download="${portfolioData.downLink}"  target="_blank" class="inline-block bg-blue-600 hover:bg-blue-700 text-white text-sm px-4 py-2 rounded">Download ManishKumar.CV@latest.pdf</a>
+      </div>
+    `;
+
+    const projectsCard = document.createElement("div");
+    projectsCard.className = "rounded-lg bg-[#1e1e1e] text-white shadow-lg p-6 md:col-span-2 lg:col-span-3";
+    projectsCard.id = "projects";
+    projectsCard.innerHTML = `
+      <h2 class="text-xl font-semibold mb-4 border-b border-gray-700 pb-2">Projects</h2>
+      <ul class="list-disc list-inside text-sm space-y-3">
+        ${portfolioData.projects.map(proj => `
+          <li><strong>${proj.name}:</strong> ${proj.description}</li>
+
+             <a href="${proj.url}" target="_blank" class="text-teal-400" >Github - ${proj.name}</a>
+            
+        `).join('')}
+      </ul>
+    `;
+    container.appendChild(projectsCard);
+  </script>
+</body>
+
+
+</html>
