@@ -36,19 +36,46 @@
 <body class="min-h-screen bg-[#111] text-white">
 
   <!-- Navbar -->
-  <nav class="w-full bg-[#1e1e1e] shadow-md p-4 flex justify-between items-center fixed top-0 z-50">
-    <div class="flex items-center gap-3">
-      <img src="https://upload.wikimedia.org/wikipedia/en/4/41/Flag_of_India.svg" alt="Avatar" class="w-10 h-10 " />
-      <span class="text-lg font-bold">&lt;Manish Kumar/&gt;
-      </span>
+  <nav class="w-full bg-[#1e1e1e] shadow-md p-4 fixed top-0 z-50">
+    <div class="flex justify-between items-center max-w-7xl mx-auto">
+      <!-- Logo -->
+      <div class="flex items-center gap-3">
+        <img src="https://upload.wikimedia.org/wikipedia/en/4/41/Flag_of_India.svg" alt="Avatar" class="w-10 h-10" />
+        <span class="text-lg font-bold">&lt;Manish Kumar/&gt;</span>
+      </div>
+
+      <!-- Desktop Menu -->
+      <ul class="hidden md:flex gap-6 text-sm ">
+        <li><a href="#home" class="hover:text-teal-400">Home</a></li>
+        <li><a href="#resume" class="hover:text-teal-400">Resume</a></li>
+        <li><a href="#projects" class="hover:text-teal-400">Projects</a></li>
+        <li><a href="#contact" class="hover:text-teal-400">Contact</a></li>
+      </ul>
+
+     <!-- Hamburger Button - visible only on mobile -->
+<button id="menu-btn" class="lg:hidden flex flex-col gap-1 w-8 h-8 justify-center items-center group">
+  <span class="block h-0.5 w-6 bg-white transition-all duration-300 ease-in-out transform group-[.open]:rotate-45 group-[.open]:translate-y-1.5"></span>
+  <span class="block h-0.5 w-6 bg-white transition-all duration-300 ease-in-out group-[.open]:opacity-0"></span>
+  <span class="block h-0.5 w-6 bg-white transition-all duration-300 ease-in-out transform group-[.open]:-rotate-45 group-[.open]:-translate-y-1.5"></span>
+</button>
+
+
     </div>
-    <ul class="flex gap-6 text-sm">
-      <li><a href="#home" class="hover:text-teal-400">Home</a></li>
-      <li><a href="#resume" class="hover:text-teal-400">Resume</a></li>
-      <li><a href="#projects" class="hover:text-teal-400">Projects</a></li>
-      <li><a href="#contact" class="hover:text-teal-400">Contact</a></li>
-    </ul>
+
+    <!-- Mobile Menu: Full width, row with dividers -->
+    <div id="mobile-menu"
+      class="md:hidden hidden w-full flex justify-between items-center mt-4 py-2 px-2 bg-[#1e1e1e] rounded-lg border border-gray-700 divide-x divide-gray-700 transition-all duration-300 ease-in-out">
+
+      <a href="#home" class="flex-1 text-center text-sm px-2 hover:text-teal-400">Home</a>
+      <a href="#resume" class="flex-1 text-center text-sm px-2 hover:text-teal-400">Resume</a>
+      <a href="#projects" class="flex-1 text-center text-sm px-2 hover:text-teal-400">Projects</a>
+      <a href="#contact" class="flex-1 text-center text-sm px-2 hover:text-teal-400">Contact</a>
+    </div>
+
   </nav>
+
+
+
 
   <!-- Banner -->
   <section id="home" class="pt-24 pb-16 flex flex-col items-center text-center px-4">
@@ -150,6 +177,23 @@
 
   <script>
     feather.replace();
+
+    const mobileMenu = document.getElementById("mobile-menu");
+
+    const menuBtn = document.getElementById('menu-btn');
+  menuBtn.addEventListener('click', () => {
+    menuBtn.classList.toggle('open');
+  });
+
+    menuBtn.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
+    });
+
+    document.querySelectorAll("#mobile-menu a").forEach(link => {
+      link.addEventListener("click", () => {
+        mobileMenu.classList.add("hidden");
+      });
+    });
     const portfolioData = {
       resumeLink: "https://drive.google.com/file/d/1Zy0-b3lPi3U2QIiKzEkxrtZhRL1qTVv7/view",
       downLink: "./ManishKumar.CV.SoftwareDev@latest.pdf",
@@ -255,7 +299,7 @@
       ,
       "IntelliJ IDEA": "https://www.jetbrains.com/idea/",
       "Maven": "https://maven.apache.org/"
-      
+
     }
 
     const container = document.getElementById("portfolio");
