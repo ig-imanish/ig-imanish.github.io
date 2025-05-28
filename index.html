@@ -52,12 +52,14 @@
         <li><a href="#contact" class="hover:text-teal-400">Contact</a></li>
       </ul>
 
-     <!-- Hamburger Button - visible only on mobile -->
-<button id="menu-btn" class="lg:hidden flex flex-col gap-1 w-8 h-8 justify-center items-center group">
-  <span class="block h-0.5 w-6 bg-white transition-all duration-300 ease-in-out transform group-[.open]:rotate-45 group-[.open]:translate-y-1.5"></span>
-  <span class="block h-0.5 w-6 bg-white transition-all duration-300 ease-in-out group-[.open]:opacity-0"></span>
-  <span class="block h-0.5 w-6 bg-white transition-all duration-300 ease-in-out transform group-[.open]:-rotate-45 group-[.open]:-translate-y-1.5"></span>
-</button>
+      <!-- Hamburger Button - visible only on mobile -->
+      <button id="menu-btn" class="lg:hidden flex flex-col gap-1 w-8 h-8 justify-center items-center group">
+        <span
+          class="block h-0.5 w-6 bg-white transition-all duration-300 ease-in-out transform group-[.open]:rotate-45 group-[.open]:translate-y-1.5"></span>
+        <span class="block h-0.5 w-6 bg-white transition-all duration-300 ease-in-out group-[.open]:opacity-0"></span>
+        <span
+          class="block h-0.5 w-6 bg-white transition-all duration-300 ease-in-out transform group-[.open]:-rotate-45 group-[.open]:-translate-y-1.5"></span>
+      </button>
 
 
     </div>
@@ -164,7 +166,7 @@
 
           </div>
           <!-- Copyright -->
-          <div class="text-gray-400 text-sm md:mt-auto" style="margin-top: 90px;">
+          <div class="text-gray-400 text-sm md:mt-auto" style="margin-top: 36px;">
             &copy; 2025 Manish. All rights reserved.
             This site and its contents are protected by applicable copyright laws.
 
@@ -181,9 +183,9 @@
     const mobileMenu = document.getElementById("mobile-menu");
 
     const menuBtn = document.getElementById('menu-btn');
-  menuBtn.addEventListener('click', () => {
-    menuBtn.classList.toggle('open');
-  });
+    menuBtn.addEventListener('click', () => {
+      menuBtn.classList.toggle('open');
+    });
 
     menuBtn.addEventListener("click", () => {
       mobileMenu.classList.toggle("hidden");
