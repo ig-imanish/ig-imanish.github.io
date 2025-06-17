@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Project Details | Manish Kumar Portfolio</title>
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/en/4/41/Flag_of_India.svg" type="image/x-icon" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&display=swap");
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            pointer-events: none;
+            background-image: linear-gradient(to right, #222 1px, transparent 1px),
+                linear-gradient(to bottom, #222 1px, transparent 1px);
+            background-size: 40px 40px;
+            z-index: 0;
+        }
+
+        body {
+            font-family: "Roboto Mono", monospace;
+            background-color: #111111;
+            position: relative;
+            color: #ffffff;
+        }
+
+        nav,
+        section,
+        div {
+            position: relative;
+            z-index: 1;
+        }
+
+        a {
+            color: #14b8a6;
+            text-decoration: none;
+            transition: color 0.3s ease, text-decoration 0.3s ease;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .project-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .gallery-item {
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.02);
+        }
+
+        .tech-tag {
+            transition: transform 0.2s ease;
+        }
+
+        .tech-tag:hover {
+            transform: translateY(-2px);
+        }
+
+        .breadcrumbs {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px 0;
+            color: #a0a0a0;
+        }
+
+        .breadcrumbs a {
+            color: #14b8a6;
+        }
+
+        .breadcrumbs .separator {
+            color: #a0a0a0;
+        }
+
+        #projectSlider {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            height: 400px;
+        }
+
+        .slide {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transition: opacity 0.5s ease;
+        }
+
+        .slide.active {
+            opacity: 1;
+        }
+
+        .slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .slider-nav {
+            position: absolute;
+            bottom: 20px;
+            left: 0;
+            right: 0;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            z-index: 10;
+        }
+
+        .slider-dot {
+            width: 12px;
+            height: 12px;
+            background-color: rgba(255, 255, 255, 0.5);
+            border-radius: 50%;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        .slider-dot.active {
+            background-color: #ffffff;
+            transform: scale(1.2);
+        }
+
+        .slider-dot:hover {
+            background-color: rgba(255, 255, 255, 0.8);
+        }
+
+        .slider-arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 48px;
+            height: 48px;
+            background-color: rgba(0, 0, 0, 0.6);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            z-index: 10;
+            transition: background-color 0.3s;
+        }
+
+        .slider-arrow:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        .slider-arrow.prev {
+            left: 20px;
+        }
+
+        .slider-arrow.next {
+            right: 20px;
+        }
+
+        .feature-card {
+            background-color: #1e1e1e;
+            border: 1px solid #383838;
+            border-radius: 8px;
+            padding: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .project-link {
+            transition: transform 0.2s ease;
+        }
+
+        .project-link:hover {
+            transform: translateY(-2px);
+        }
+
+        .code-block {
+            background-color: #1a1a1a;
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid #383838;
+            overflow-x: auto;
+        }
+
+        .code-line {
+            display: block;
+            font-family: "Roboto Mono", monospace;
+            color: #e6e6e6;
+        }
+
+        .code-comment {
+            color: #6c7086;
+        }
+
+        .code-keyword {
+            color: #ff7b72;
+        }
+
+        .code-string {
+            color: #a5d6a7;
+        }
+
+        .code-var {
+            color: #79c0ff;
+        }
+
+        .bottom-cards a {
+            text-decoration: none;
+        }
+
+        @media (max-width: 767px) {
+            #projectSlider {
+                height: 250px;
+            }
+
+            .slider-arrow {
+                width: 40px;
+                height: 40px;
+            }
+        }
+    </style>
+</head>
+
+<body class="min-h-screen bg-[#111] text-white">
+    <!-- Navbar -->
+    <nav class="w-full bg-[#1e1e1e] shadow-md p-4 fixed top-0 z-50">
+        <div class="flex justify-between items-center max-w-7xl mx-auto">
+            <div class="flex items-center gap-3">
+                <img src="https://upload.wikimedia.org/wikipedia/en/4/41/Flag_of_India.svg" alt="Avatar"
+                    class="w-10 h-10" />
+                <span class="text-lg font-bold">&lt;Manish Kumar/&gt;</span>
+            </div>
+             <ul class="hidden md:flex gap-6 text-sm">
+          <li>
+            <a href="../index.html#home" class="hover:text-teal-400">Home</a>
+          </li>
+          <li>
+            <a href="../index.html#resume" class="hover:text-teal-400">Resume</a>
+          </li>
+          <li>
+            <a href="../index.html#projects" class="hover:text-teal-400"
+              >Projects</a
+            >
+          </li>
+          <li>
+            <a href="../index.html#contact" class="hover:text-teal-400">Contact</a>
+          </li>
+        </ul>
+        <button
+          id="menu-btn"
+          class="md:hidden flex flex-col gap-1 w-8 h-8 justify-center items-center group"
+        >
+          <span
+            class="block h-0.5 w-6 bg-white transition-all duration-300 ease-in-out transform group-[.open]:rotate-45 group-[.open]:translate-y-1.5"
+          ></span>
+          <span
+            class="block h-0.5 w-6 bg-white transition-all duration-300 ease-in-out group-[.open]:opacity-0"
+          ></span>
+          <span
+            class="block h-0.5 w-6 bg-white transition-all duration-300 ease-in-out transform group-[.open]:-rotate-45 group-[.open]:-translate-y-1.5"
+          ></span>
+        </button>
+      </div>
+      <div
+        id="mobile-menu"
+        class="md:hidden hidden w-full flex justify-between items-center mt-4 py-2 px-2 bg-[#1e1e1e] rounded-lg border border-gray-700 divide-x divide-gray-700 transition-all duration-300 ease-in-out"
+      >
+        <a
+          href="../index.html#home"
+          class="flex-1 text-center text-sm px-2 hover:text-teal-400"
+          >Home</a
+        >
+        <a
+          href="../index.html#resume"
+          class="flex-1 text-center text-sm px-2 hover:text-teal-400"
+          >Resume</a
+        >
+        <a
+          href="../index.html#projects"
+          class="flex-1 text-center text-sm px-2 hover:text-teal-400"
+          >Projects</a
+        >
+        <a
+          href="../index.html#contact"
+          class="flex-1 text-center text-sm px-2 hover:text-teal-400"
+          >Contact</a
+        >
+      </div>
+    </nav>
+
+    <!-- Breadcrumbs -->
+    <div class="max-w-6xl mx-auto pt-24 px-4 mb-4">
+      <div class="breadcrumbs">
+        <a href="../index.html">Home</a>
+        <span class="separator">/</span>
+        <a href="../projects/">Projects</a>
+            <span class="separator">/</span>
+            <span>URL Shortener</span>
+        </div>
+    </div>
+
+    <!-- Project Header -->
+    <div class="max-w-6xl mx-auto px-4 mb-8">
+        <h1 class="text-3xl md:text-4xl font-bold mb-2">URL Shortener</h1>
+        <div class="flex flex-wrap gap-2 mb-6">
+            <span class="bg-gray-700 text-xs px-2 py-1 rounded">Spring Boot</span>
+            <span class="bg-gray-700 text-xs px-2 py-1 rounded">Thymeleaf</span>
+            <span class="bg-gray-700 text-xs px-2 py-1 rounded">MongoDB</span>
+            <span class="bg-gray-700 text-xs px-2 py-1 rounded">html</span>
+            <span class="bg-gray-700 text-xs px-2 py-1 rounded">css</span>
+            <span class="bg-gray-700 text-xs px-2 py-1 rounded">Docker</span>
+        </div>
+        <p class="text-gray-300 mb-4">
+            SHORTxURL is a Spring Boot web project that provides URL shortening
+            functionality. It shortens your long URL with a custom name! Making
+            sharing easier.
+        </p>
+    </div>
+
+    <!-- Main Image Slider -->
+    <div class="max-w-6xl mx-auto px-4 mb-12">
+        <div id="projectSlider">
+            <div class="slide active">
+                <img src="https://raw.githubusercontent.com/ig-imanish/SHORTxURL/refs/heads/main/Screenshot%20(33).png"
+                    alt="URL Shortener Screenshot 1" class="absolute top-0 left-0 w-full h-full object-cover active" />
+            </div>
+            <div class="slide">
+                <img src="https://imgs.search.brave.com/6SRH4lriScQUfAdXd9Sqbmeb7UL0BgidqPdMxZyJcR0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJiYXQuY29t/L2ltZy81NjI2OTEt/ZnJlZS1kb3dubG9h/ZC10aGFuay15b3Ut/d2lkZXNjcmVlbi1o/ZC13YWxscGFwZXIt/aGQtd2FsbHBhcGVy/LXJvY2tzLTE5MjB4/MTIwMC1mb3IteW91/ci1kZXNrdG9wLW1v/YmlsZS10YWJsZXQt/ZXhwbG9yZS10aGFu/ay15b3Utd2FsbHBh/cGVyLWZyZWUtaGFy/bGV5LWRhdmlkc29u/LXdhbGxwYXBlci10/aGFuay11LXdhbGxw/YXBlci1oYXJsZXku/anBn"
+                    alt="Blog Post View" />
+            </div>
+
+            <!-- Navigation dots -->
+            <div class="slider-nav">
+                <div class="slider-dot active" data-index="0"></div>
+                <div class="slider-dot" data-index="1"></div>
+            </div>
+
+            <!-- Navigation arrows -->
+            <div class="slider-arrow prev">
+                <i data-feather="chevron-left"></i>
+            </div>
+            <div class="slider-arrow next">
+                <i data-feather="chevron-right"></i>
+            </div>
+        </div>
+    </div>
+
+    <!-- Project Details -->
+    <div class="max-w-6xl mx-auto px-4 mb-16">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <!-- Left column - About the project -->
+            <div class="lg:col-span-2">
+                <div class="bg-[#1e1e1e] rounded-lg p-6 mb-8 border border-gray-700">
+                    <h2 class="text-2xl font-semibold mb-6 border-b border-gray-700 pb-2">
+                        About the Project
+                    </h2>
+                    <div class="space-y-4 text-gray-200">
+                        <p>
+                            SHORTxURL is a simple and fast URL shortener built with Spring
+                            Boot and Thymeleaf. No login or registration is required—just
+                            visit the site, enter your long URL, and get a short, shareable
+                            link instantly.
+                        </p>
+                        <p>
+                            Each shortened URL is valid for 28 days from creation. After 28
+                            days, the short link and its mapping are automatically deleted
+                            for privacy and storage efficiency.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bg-[#1e1e1e] rounded-lg p-6 mb-8 border border-gray-700">
+                    <h2 class="text-2xl font-semibold mb-6 border-b border-gray-700 pb-2">
+                        Key Features
+                    </h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mb-6">
+                        <div class="feature-card">
+                            <i data-feather="link-2" class="text-teal-500 mb-3"></i>
+                            <h3 class="text-lg font-semibold mb-2">
+                                Instant URL Shortening
+                            </h3>
+                            <p class="text-gray-300 text-sm">
+                                Quickly shorten long URLs with a custom alias, no login
+                                required.
+                            </p>
+                        </div>
+                        <div class="feature-card">
+                            <i data-feather="clock" class="text-teal-500 mb-3"></i>
+                            <h3 class="text-lg font-semibold mb-2">28-Day Expiry</h3>
+                            <p class="text-gray-300 text-sm">
+                                Shortened links automatically expire and are deleted after 28
+                                days for privacy and storage efficiency.
+                            </p>
+                        </div>
+
+                        <div class="feature-card">
+                            <i data-feather="bar-chart-2" class="text-teal-500 mb-3"></i>
+                            <h3 class="text-lg font-semibold mb-2">Click Analytics</h3>
+                            <p class="text-gray-300 text-sm">
+                                Track the number of times your short link is clicked (coming
+                                soon).
+                            </p>
+                            <span class="bg-red-600/60 text-xs px-3 py-1 text-white">Not Added Yet</span>
+                        </div>
+                        <div class="feature-card">
+                            <i data-feather="edit-2" class="text-teal-500 mb-3"></i>
+                            <h3 class="text-lg font-semibold mb-2">Custom Alias</h3>
+                            <p class="text-gray-300 text-sm">
+                                Choose your own short URL ending for easy sharing and recall.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-[#1e1e1e] rounded-lg p-6 mb-8 border border-gray-700">
+                    <h2 class="text-2xl font-semibold mb-6 border-b border-gray-700 pb-2">
+                        Technical Implementation
+                    </h2>
+                    <div class="space-y-5 text-gray-200">
+                        <p>
+                            The application follows a clean MVC architecture with these main
+                            components:
+                        </p>
+                        <ul class="list-disc pl-5 space-y-2 text-gray-300">
+                            <li>
+                                <strong class="text-white">Controllers:</strong> Handle HTTP
+                                requests, process user input, and return views.
+                            </li>
+                            <li>
+                                <strong class="text-white">Services:</strong> Contain business
+                                logic and interact with repositories.
+                            </li>
+                            <li>
+                                <strong class="text-white">Repositories:</strong> Interface
+                                with MongoDB for data persistence.
+                            </li>
+                            <li>
+                                <strong class="text-white">Models:</strong> Define URL mapping
+                                and related entities.
+                            </li>
+                            <li>
+                                <strong class="text-white">Views:</strong> Thymeleaf templates
+                                for rendering the HTML UI.
+                            </li>
+                        </ul>
+
+                        <h3 class="text-xl font-medium mt-6 mb-3">Database Schema</h3>
+                        <p>The application uses MongoDB with a simple schema:</p>
+                        <ul class="list-disc pl-5 space-y-2 text-gray-300">
+                            <li>
+                                <strong class="text-white">ShortUrl:</strong> Stores the
+                                original URL, custom alias, creation date.
+                            </li>
+                        </ul>
+                        <p class="text-gray-400 text-sm mt-2">
+                            No user accounts or authentication are required. Each short URL
+                            is stored with its metadata and is automatically deleted after
+                            28 days.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right column - Project info -->
+            <div class="lg:col-span-1">
+                <div class="bg-[#1e1e1e] rounded-lg p-6 mb-5 border border-gray-700 sticky top-20">
+                    <h2 class="text-xl font-semibold mb-4 border-b border-gray-700 pb-2">
+                        Project Information
+                    </h2>
+
+                    <div class="space-y-5">
+                        <div>
+                            <h3 class="text-sm uppercase text-gray-400 mb-2">
+                                Project Links
+                            </h3>
+                            <div class="flex flex-col gap-3">
+                                <a href="https://github.com/ig-imanish/SHORTxURL" target="_blank"
+                                    class="flex items-center gap-2 project-link">
+                                    <i data-feather="github" class="w-5 h-5"></i>
+                                    <span>Source Code</span>
+                                </a>
+                                <a href="https://shortxurl.onrender.com/" target="_blank"
+                                    class="flex items-center gap-2 project-link">
+                                    <i data-feather="external-link" class="w-5 h-5"></i>
+                                    <span>Live Demo</span>
+                                </a>
+                                <!-- <a href="#" target="_blank" class="flex items-center gap-2 project-link">
+                                    <i data-feather="book" class="w-5 h-5"></i>
+                                    <span>Documentation</span>
+                                </a> -->
+                            </div>
+                        </div>
+
+                        <div>
+                            <h3 class="text-sm uppercase text-gray-400 mb-2">Tech Stack</h3>
+                            <div class="flex flex-wrap gap-2 mb-5">
+                                <div class="tech-tag bg-gray-700 text-xs px-2 py-1 rounded hover:bg-gray-600">
+                                    Java 21
+                                </div>
+                                <span class="bg-gray-700 text-xs px-2 py-1 rounded">Spring Boot</span>
+                                <span class="bg-gray-700 text-xs px-2 py-1 rounded">Thymeleaf</span>
+                                <span class="bg-gray-700 text-xs px-2 py-1 rounded">MongoDB</span>
+                                <span class="bg-gray-700 text-xs px-2 py-1 rounded">html</span>
+                                <span class="bg-gray-700 text-xs px-2 py-1 rounded">css</span>
+                                <span class="bg-gray-700 text-xs px-2 py-1 rounded">Docker</span>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h3 class="text-sm uppercase text-gray-400 mb-2">Timeline</h3>
+                            <div class="space-y-2 text-sm">
+                                <div class="flex justify-between">
+                                    <span>Started:</span>
+                                    <span> March 18, 2024</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span>Completed:</span>
+                                    <span>Jul 3, 2024</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span>Last Updated:</span>
+                                    <span>June 17, 2025</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h3 class="text-sm uppercase text-gray-400 mb-2">
+                                Contributors
+                            </h3>
+                            <div class="flex items-center gap-2">
+                                <img src="https://avatars.githubusercontent.com/u/153966717?s=400&u=17e3493aa13f10c49e65d6cca22d117b1b0735dd&v=4"
+                                    alt="Manish Kumar" class="w-8 h-8 rounded-full" />
+                                <span><a href="https://github.com/ig-imanish">Manish Kumar</a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Other Projects Section -->
+    <div class="max-w-6xl mx-auto px-4 mb-16">
+        <h2 class="text-2xl font-semibold mb-8 border-b border-gray-700 pb-2">
+            Other Projects You Might Like
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 bottom-cards">
+            <!-- Project 1 -->
+            <a href="../projects/blogZone.html"
+                class="bg-[#1e1e1e] rounded-lg overflow-hidden border border-gray-700 transition duration-300 hover:translate-y-[-5px] hover:shadow-xl">
+                <div class="h-40 overflow-hidden">
+                    <img src="https://raw.githubusercontent.com/ig-imanish/ig-imanish.github.io/refs/heads/main/blog-home.png"
+                        alt="Basic ChatBot" class="w-full h-full object-cover" />
+                </div>
+                <div class="p-4">
+                    <h3 class="text-lg font-semibold mb-2">Blogging Website</h3>
+                    <p class="text-sm text-gray-300 mb-3">
+                        A simple blog project enabling users to create, read, update, and
+                        delete .
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <div class="tech-tag bg-gray-700 text-xs px-2 py-1 rounded hover:bg-gray-600">
+                            Java 21
+                        </div>
+                        <div class="tech-tag bg-gray-700 text-xs px-2 py-1 rounded hover:bg-gray-600">
+                            Spring Boot 3.3.1
+                        </div>
+                        <div class="tech-tag bg-gray-700 text-xs px-2 py-1 rounded hover:bg-gray-600">
+                            Thymeleaf
+                        </div>
+                        <div class="tech-tag bg-gray-700 text-xs px-2 py-1 rounded hover:bg-gray-600">
+                            MongoDB
+                        </div>
+
+                        <div class="tech-tag bg-gray-700 text-xs px-2 py-1 rounded hover:bg-gray-600">
+                            Spring Security
+                        </div>
+
+                        <div class="tech-tag bg-gray-700 text-xs px-2 py-1 rounded hover:bg-gray-600">
+                            JavaScript
+                        </div>
+
+                        <div class="tech-tag bg-gray-700 text-xs px-2 py-1 rounded hover:bg-gray-600">
+                            html
+                        </div>
+                        <div class="tech-tag bg-gray-700 text-xs px-2 py-1 rounded hover:bg-gray-600">
+                            css
+                        </div>
+                        <div class="tech-tag bg-gray-700 text-xs px-2 py-1 rounded hover:bg-gray-600">
+                            Docker
+                        </div>
+                        <div class="tech-tag bg-gray-700 text-xs px-2 py-1 rounded hover:bg-gray-600">
+                            Markdown
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Project 2 -->
+            <a href="../projects/securetotp.html"
+                class="bg-[#1e1e1e] rounded-lg overflow-hidden border border-gray-700 transition duration-300 hover:translate-y-[-5px] hover:shadow-xl">
+                <div class="h-40 overflow-hidden">
+                    <img src="https://raw.githubusercontent.com/ig-imanish/ig-imanish.github.io/refs/heads/main/Screenshot%20(25).png"
+                        alt="Blogging Website Homepage"
+                        class="absolute top-0 left-0 w-full h-full object-cover active" />
+                </div>
+                <div class="p-4">
+                    <h3 class="text-lg font-semibold mb-2">SecureTOTP</h3>
+                    <p class="text-sm text-gray-300 mb-3">
+                        A simple blog project enabling users to create, read, update, and
+                        delete
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <div class="tech-tag bg-gray-700 text-xs px-2 py-1 rounded hover:bg-gray-600">
+                            Java
+                        </div>
+                        <div class="tech-tag bg-gray-700 text-xs px-2 py-1 rounded hover:bg-gray-600">
+                            Spring Boot
+                        </div>
+                        <div class="tech-tag bg-gray-700 text-xs px-2 py-1 rounded hover:bg-gray-600">
+                            Spring microservices
+                        </div>
+
+                        <div class="tech-tag bg-gray-700 text-xs px-2 py-1 rounded hover:bg-gray-600">
+                            MongoDB
+                        </div>
+
+                        <div class="tech-tag bg-gray-700 text-xs px-2 py-1 rounded hover:bg-gray-600">
+                            Spring Security
+                        </div>
+
+                        <div class="tech-tag bg-gray-700 text-xs px-2 py-1 rounded hover:bg-gray-600">
+                            oauth2
+                        </div>
+
+                        <div class="tech-tag bg-gray-700 text-xs px-2 py-1 rounded hover:bg-gray-600">
+                            Jwt
+                        </div>
+
+                        <div class="tech-tag bg-gray-700 text-xs px-2 py-1 rounded hover:bg-gray-600">
+                            Spring mail
+                        </div>
+
+                        <div class="tech-tag bg-gray-700 text-xs px-2 py-1 rounded hover:bg-gray-600">
+                            html
+                        </div>
+                        <div class="tech-tag bg-gray-700 text-xs px-2 py-1 rounded hover:bg-gray-600">
+                            css
+                        </div>
+                        <div class="tech-tag bg-gray-700 text-xs px-2 py-1 rounded hover:bg-gray-600">
+                            JavaScript
+                        </div>
+                        <div class="tech-tag bg-gray-700 text-xs px-2 py-1 rounded hover:bg-gray-600">
+                            Docker
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Project 3 -->
+            <a href="../projects/chatbot.html"
+                class="bg-[#1e1e1e] rounded-lg overflow-hidden border border-gray-700 transition duration-300 hover:translate-y-[-5px] hover:shadow-xl">
+                <div class="h-40 overflow-hidden">
+                    <img src="https://raw.githubusercontent.com/ig-imanish/ig-imanish.github.io/refs/heads/main/chatbot.png"
+                        alt="Basic ChatBot" class="w-full h-full object-cover" />
+                </div>
+                <div class="p-4">
+                    <h3 class="text-lg font-semibold mb-2">Basic ChatBot</h3>
+                    <p class="text-sm text-gray-300 mb-3">
+                        Simple ChatBot Using Java Servlet JSP.
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-gray-700 text-xs px-2 py-1 rounded">html</span>
+                        <span class="bg-gray-700 text-xs px-2 py-1 rounded">css</span>
+                        <span class="bg-gray-700 text-xs px-2 py-1 rounded">JSP</span>
+                        <span class="bg-gray-700 text-xs px-2 py-1 rounded">Servlet</span>
+
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <section class="bg-[#111] text-white px-4 py-16" id="contact">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-[2fr_1.2fr] gap-10 items-start">
+            <div class="space-y-6">
+                <div>
+                    <h2 class="text-3xl font-semibold mb-2">Let's Connect</h2>
+                    <p class="mb-4 text-gray-300">
+                        Feel free to reach out for collaborations or just a friendly hello
+                        👋
+                    </p>
+                </div>
+                <div>
+                    <form action="https://formspree.io/f/xgvklbln" method="POST" class="space-y-4">
+                        <input type="email" name="email" placeholder="Your Email" required
+                            class="w-full px-4 py-2 bg-[#1e1e1e] border border-gray-700 rounded text-white" />
+                        <textarea name="message" rows="5" placeholder="Your Message" required
+                            class="w-full px-4 py-2 bg-[#1e1e1e] border border-gray-700 rounded text-white"></textarea>
+                        <button type="submit"
+                            class="bg-teal-500 hover:bg-teal-600 text-white px-6 py-2 rounded-lg transition">
+                            Send
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="flex flex-col justify-between h-full space-y-10 md:space-y-0 text-center md:text-left">
+                <div class="space-y-4">
+                    <h2 class="text-2xl font-semibold mb-2">Follow Me</h2>
+                    <div class="flex flex-col gap-3 text-sm text-white font-mono">
+                        <a href="https://github.com/ig-imanish" target="_blank"
+                            class="flex items-center gap-2 hover:text-teal-400 transition">
+                            <i data-feather="github" class="text-white w-5 h-5"></i>
+                            <span class="flex-1 border-b border-dotted border-gray-600 mx-2"></span>
+                            @ig-imanish
+                        </a>
+                        <a href="https://linkedin.com/in/imanish02" target="_blank"
+                            class="flex items-center gap-2 hover:text-teal-400 transition">
+                            <i data-feather="linkedin" class="text-[#0077B5] w-5 h-5"></i>
+                            <span class="flex-1 border-b border-dotted border-gray-600 mx-2"></span>
+                            @imanish02
+                        </a>
+                        <a href="https://twitter.com/@itz_Manish02" target="_blank"
+                            class="flex items-center gap-2 hover:text-teal-400 transition">
+                            <i data-feather="twitter" class="text-[#1DA1F2] w-5 h-5"></i>
+                            <span class="flex-1 border-b border-dotted border-gray-600 mx-2"></span>
+                            @itz_Manish02
+                        </a>
+                        <a href="https://dev.to/ig-imanish" target="_blank"
+                            class="flex items-center gap-2 hover:text-teal-400 transition">
+                            <i data-feather="terminal" class="text-white w-5 h-5"></i>
+                            <span class="flex-1 border-b border-dotted border-gray-600 mx-2"></span>
+                            @ig-imanish
+                        </a>
+                        <a href="mailto:work.manish02@yahoo.com"
+                            class="flex items-center gap-2 hover:text-teal-400 transition">
+                            <i data-feather="mail" class="text-[#EA4335] w-5 h-5"></i>
+                            <span class="flex-1 border-b border-dotted border-gray-600 mx-2"></span>
+                            work.manish02@yahoo.com
+                        </a>
+                    </div>
+                    <div class="text-gray-400 text-sm md:mt-auto" style="margin-top: 36px">
+                        © 2025 Manish. All rights reserved. This site and its contents are
+                        protected by applicable copyright laws.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        feather.replace();
+
+        const mobileMenu = document.getElementById("mobile-menu");
+        const menuBtn = document.getElementById("menu-btn");
+        menuBtn.addEventListener("click", () => {
+            menuBtn.classList.toggle("open");
+            mobileMenu.classList.toggle("hidden");
+        });
+
+        document.querySelectorAll("#mobile-menu a").forEach((link) => {
+            link.addEventListener("click", () => {
+                mobileMenu.classList.add("hidden");
+                menuBtn.classList.remove("open");
+            });
+        });
+
+        // Project image slider
+        document.addEventListener("DOMContentLoaded", function () {
+            const slides = document.querySelectorAll(".slide");
+            const dots = document.querySelectorAll(".slider-dot");
+            const prevBtn = document.querySelector(".slider-arrow.prev");
+            const nextBtn = document.querySelector(".slider-arrow.next");
+            let currentIndex = 0;
+
+            function showSlide(index) {
+                slides.forEach((slide, i) => {
+                    slide.classList.toggle("active", i === index);
+                });
+
+                dots.forEach((dot, i) => {
+                    dot.classList.toggle("active", i === index);
+                });
+
+                currentIndex = index;
+            }
+
+            // Initialize dots click events
+            dots.forEach((dot, i) => {
+                dot.addEventListener("click", () => showSlide(i));
+            });
+
+            // Initialize arrow click events
+            prevBtn.addEventListener("click", () => {
+                const newIndex = (currentIndex - 1 + slides.length) % slides.length;
+                showSlide(newIndex);
+            });
+
+            nextBtn.addEventListener("click", () => {
+                const newIndex = (currentIndex + 1) % slides.length;
+                showSlide(newIndex);
+            });
+
+            // Auto-rotate slides every 5 seconds
+            let slideInterval = setInterval(() => {
+                const newIndex = (currentIndex + 1) % slides.length;
+                showSlide(newIndex);
+            }, 5000);
+
+            // Pause auto-rotation on hover
+            const slider = document.getElementById("projectSlider");
+            slider.addEventListener("mouseenter", () =>
+                clearInterval(slideInterval)
+            );
+            slider.addEventListener("mouseleave", () => {
+                slideInterval = setInterval(() => {
+                    const newIndex = (currentIndex + 1) % slides.length;
+                    showSlide(newIndex);
+                }, 5000);
+            });
+        });
+    </script>
+</body>
+
+</html>
