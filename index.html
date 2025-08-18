@@ -5660,16 +5660,12 @@
             Projects
           </h2>
 
-          <!-- Projects Grid - First Row -->
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-            <!-- Project 1: Blogging Website -->
-            <div class="flex flex-col h-full rounded-lg overflow-hidden">
-              <div class="relative w-full" style="padding-bottom: 56.25%">
-                <!-- Image Carousel -->
-                <div
-                  class="project-carousel absolute top-0 left-0 w-full h-full"
-                >
-                  <img
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+          <article class="flex flex-col h-full rounded-lg overflow-hidden bg-[#181818] border border-gray-700 shadow-lg">
+            <!-- Image Carousel (replace images as needed) -->
+            <div class="relative w-full" style="padding-bottom: 56.25%">
+              <div class="project-carousel absolute top-0 left-0 w-full h-full">
+                 <img
                     src="https://raw.githubusercontent.com/ig-imanish/ig-imanish.github.io/refs/heads/main/Screenshot%20(25).png"
                     alt="Blogging Website Homepage"
                     class="absolute top-0 left-0 w-full h-full object-cover active"
@@ -5704,12 +5700,9 @@
                     alt="Blogging Website Post"
                     class="absolute top-0 left-0 w-full h-full object-cover hidden"
                   />
-
-                  <!-- Navigation Dots -->
-                  <div
-                    class="absolute bottom-2 left-0 right-0 flex justify-center gap-1"
-                  >
-                    <button
+                <!-- Navigation Dots -->
+                <div class="absolute bottom-2 left-0 right-0 flex justify-center gap-1">
+                   <button
                       class="w-2 h-2 rounded-full bg-white opacity-100 project-dot"
                       data-index="0"
                     ></button>
@@ -5737,45 +5730,41 @@
                       class="w-2 h-2 rounded-full bg-white opacity-50 project-dot"
                       data-index="6"
                     ></button>
-                  </div>
-
-                  <!-- Navigation Arrows -->
-                  <button
-                    class="absolute top-1/2 left-2 transform -translate-y-1/2 bg-black bg-opacity-50 rounded-full p-1 project-prev"
-                  >
-                    <i data-feather="chevron-left" class="w-4 h-4"></i>
-                  </button>
-                  <button
-                    class="absolute top-1/2 right-2 transform -translate-y-1/2 bg-black bg-opacity-50 rounded-full p-1 project-next"
-                  >
-                    <i data-feather="chevron-right" class="w-4 h-4"></i>
-                  </button>
                 </div>
+                <!-- Navigation Arrows -->
+                <button class="absolute top-1/2 left-2 transform -translate-y-1/2 bg-black bg-opacity-50 rounded-full p-1 project-prev">
+                  <i data-feather="chevron-left" class="w-4 h-4"></i>
+                </button>
+                <button class="absolute top-1/2 right-2 transform -translate-y-1/2 bg-black bg-opacity-50 rounded-full p-1 project-next">
+                  <i data-feather="chevron-right" class="w-4 h-4"></i>
+                </button>
               </div>
-              <div class="pt-4 flex-grow">
-                <h3 class="text-lg font-semibold mb-2 flex items-center gap-2">
-                  <svg
-                    class="w-5 h-5 text-green-500"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"
-                    ></path>
-                  </svg>
-                  SecureTOTP
-                </h3>
-                <p class="text-sm mb-4">
-                  A robust two-factor authentication system implementing
+            </div>
+            <div class="p-6 flex flex-col gap-4 flex-grow">
+              <!-- Project Title -->
+              <header class="flex items-center gap-2">
+                <svg class="w-5 h-5 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 4h2a2 2 0 012 2v14a2 2 0 01-2 2H6a2 2 0 01-2-2V6a2 2 0 012-2h2"></path>
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 2v4m8-4v4M4 10h16" />
+                </svg>
+                <h3 class="text-lg font-semibold">SecureTOTP</h3>
+              </header>
+
+              <!-- About Section -->
+              <section>
+                <h4 class="font-semibold text-base mb-1 text-teal-400">About</h4>
+                <p class="text-sm text-gray-200">
+                 A robust two-factor authentication system implementing
                   Time-based One-Time Password (TOTP) for enhanced application
                   security. Built with Spring Boot microservices architecture,
                   it provides a seamless and secure authentication experience.
-                </p>
-                <div class="flex flex-wrap gap-2 mb-4">
+                  </p>
+              </section>
+
+              <!-- Tech Stack Section -->
+              <section>
+                <h4 class="font-semibold text-base mb-1 text-teal-400">Tech Stack</h4>
+                <ul class="flex flex-wrap gap-2 mb-2">
                   <div
                     class="tech-tag bg-gray-700 text-xs px-2 py-1 rounded hover:bg-gray-600 flex items-center gap-1"
                   >
@@ -5845,9 +5834,13 @@
                     class="tech-tag bg-gray-700 text-xs px-2 py-1 rounded hover:bg-gray-600 flex items-center gap-1"
                   >
                     Docker
-                  </div>
-                </div>
-                <div class="flex flex-wrap gap-3 mt-auto">
+                  </div> </ul>
+              </section>
+
+              <!-- Links Section -->
+              <section>
+                <h4 class="font-semibold text-base mb-1 text-teal-400">Links</h4>
+                <div class="flex flex-wrap gap-3">
                   <a
                     href="https://github.com/ig-imanish/SecureTOTP-Frontend"
                     target="_blank"
@@ -5873,17 +5866,16 @@
                     <span>Project Info</span>
                   </a>
                 </div>
-              </div>
+              </section>
             </div>
+          </article>
 
-            <!-- Project 1: Blogging Website -->
-            <div class="flex flex-col h-full rounded-lg overflow-hidden">
-              <div class="relative w-full" style="padding-bottom: 56.25%">
-                <!-- Image Carousel -->
-                <div
-                  class="project-carousel absolute top-0 left-0 w-full h-full"
-                >
-                  <img
+
+           <article class="flex flex-col h-full rounded-lg overflow-hidden bg-[#181818] border border-gray-700 shadow-lg">
+            <!-- Image Carousel (replace images as needed) -->
+            <div class="relative w-full" style="padding-bottom: 56.25%">
+              <div class="project-carousel absolute top-0 left-0 w-full h-full">
+               <img
                     src="https://imgs.search.brave.com/Ncl_kXAdTRRmzmFldVjokLGL3vL7VYSKnLBE1G2boBM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTAw/ODcxOTc0NC9waG90/by93b29kLWJsb2Nr/LWN1YmUtcHV0LXRo/ZS1mcm9udC1jb21w/dXRlci1rZXlib2Fy/ZC13aXRoLXdvcmQt/YmxvZy1hbmQtZW1w/dHktY29weS1zcGFj/ZS1mb3IteW91ci5q/cGc_cz02MTJ4NjEy/Jnc9MCZrPTIwJmM9/RjNvaWkyMXlkcDVa/TWxPYTNDYXJEaVJw/T0JJMkZqMFlfTTVK/LUMzZkhwQT0"
                     alt="Blogging Website Homepage"
                     class="absolute top-0 left-0 w-full h-full object-cover active"
@@ -5897,12 +5889,9 @@
                     alt="Blogging Website Post"
                     class="absolute top-0 left-0 w-full h-full object-cover hidden"
                   />
-
-                  <!-- Navigation Dots -->
-                  <div
-                    class="absolute bottom-2 left-0 right-0 flex justify-center gap-1"
-                  >
-                    <button
+                <!-- Navigation Dots -->
+                <div class="absolute bottom-2 left-0 right-0 flex justify-center gap-1">
+                  <button
                       class="w-2 h-2 rounded-full bg-white opacity-100 project-dot"
                       data-index="0"
                     ></button>
@@ -5913,47 +5902,41 @@
                     <button
                       class="w-2 h-2 rounded-full bg-white opacity-50 project-dot"
                       data-index="2"
-                    ></button>
-                  </div>
-
-                  <!-- Navigation Arrows -->
-                  <button
-                    class="absolute top-1/2 left-2 transform -translate-y-1/2 bg-black bg-opacity-50 rounded-full p-1 project-prev"
-                  >
-                    <i data-feather="chevron-left" class="w-4 h-4"></i>
-                  </button>
-                  <button
-                    class="absolute top-1/2 right-2 transform -translate-y-1/2 bg-black bg-opacity-50 rounded-full p-1 project-next"
-                  >
-                    <i data-feather="chevron-right" class="w-4 h-4"></i>
-                  </button>
-                </div>
+                    ></button>     </div>
+                <!-- Navigation Arrows -->
+                <button class="absolute top-1/2 left-2 transform -translate-y-1/2 bg-black bg-opacity-50 rounded-full p-1 project-prev">
+                  <i data-feather="chevron-left" class="w-4 h-4"></i>
+                </button>
+                <button class="absolute top-1/2 right-2 transform -translate-y-1/2 bg-black bg-opacity-50 rounded-full p-1 project-next">
+                  <i data-feather="chevron-right" class="w-4 h-4"></i>
+                </button>
               </div>
-              <div class="pt-4 flex-grow">
-                <h3 class="text-lg font-semibold mb-2 flex items-center gap-2">
-                  <svg
-                    class="w-5 h-5 text-blue-500"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"
-                    ></path>
-                  </svg>
-                  Blogging Website
-                </h3>
-                <p class="text-sm mb-4">
-                  A simple blog project enabling users to create, read, update,
+            </div>
+            <div class="p-6 flex flex-col gap-4 flex-grow">
+              <!-- Project Title -->
+              <header class="flex items-center gap-2">
+                <svg class="w-5 h-5 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 4h2a2 2 0 012 2v14a2 2 0 01-2 2H6a2 2 0 01-2-2V6a2 2 0 012-2h2"></path>
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 2v4m8-4v4M4 10h16" />
+                </svg>
+                <h3 class="text-lg font-semibold">Blogging Website</h3>
+              </header>
+
+              <!-- About Section -->
+              <section>
+                <h4 class="font-semibold text-base mb-1 text-teal-400">About</h4>
+                <p class="text-sm text-gray-200">
+                A simple blog project enabling users to create, read, update,
                   and delete (CRUD) blog posts from markdown, with
                   authentication features to secure user accounts and manage
-                  access.
-                </p>
-                <div class="flex flex-wrap gap-2 mb-4">
-                  <div
+                  access.   </p>
+              </section>
+
+              <!-- Tech Stack Section -->
+              <section>
+                <h4 class="font-semibold text-base mb-1 text-teal-400">Tech Stack</h4>
+                <ul class="flex flex-wrap gap-2 mb-2">
+                                  <div
                     class="tech-tag bg-gray-700 text-xs px-2 py-1 rounded hover:bg-gray-600"
                   >
                     Java 21
@@ -6014,10 +5997,14 @@
                     class="tech-tag bg-gray-700 text-xs px-2 py-1 rounded hover:bg-gray-600"
                   >
                     Markdown
-                  </div>
-                </div>
-                <div class="flex flex-wrap gap-3 mt-auto">
-                  <a
+                  </div>     </ul>
+              </section>
+
+              <!-- Links Section -->
+              <section>
+                <h4 class="font-semibold text-base mb-1 text-teal-400">Links</h4>
+                <div class="flex flex-wrap gap-3">
+                 <a
                     href="https://github.com/ig-imanish/BlogZone"
                     target="_blank"
                     class="flex items-center justify-center gap-1 bg-gray-700 hover:bg-gray-600 text-white px-3 py-1.5 rounded text-sm transition w-[calc(50%-0.375rem)] sm:w-auto"
@@ -6042,20 +6029,216 @@
                     <span>Project Info</span>
                   </a>
                 </div>
+              </section>
+            </div>
+          </article>
+        </section>
+
+      <!-- Project 3rd row -->
+
+        <!-- =====================
+          Project Card: QuickRef.me
+          Reusable, readable, and structured for easy copy-paste
+        ====================== -->
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+          <article class="flex flex-col h-full rounded-lg overflow-hidden bg-[#181818] border border-gray-700 shadow-lg">
+            <!-- Image Carousel (replace images as needed) -->
+            <div class="relative w-full" style="padding-bottom: 56.25%">
+              <div class="project-carousel absolute top-0 left-0 w-full h-full">
+                <img
+                  src="https://raw.githubusercontent.com/ig-imanish/BlogZone-Clg-project/refs/heads/main/images/Screenshot%202025-08-17%20114152.png"
+                  alt="Blog Zone Top Screenshot"
+                  class="absolute top-0 left-0 w-full h-full object-cover active"
+                />
+                <img
+                  src="https://raw.githubusercontent.com/ig-imanish/BlogZone-Clg-project/refs/heads/main/images/Screenshot%202025-08-17%20114215.png"
+                  alt="Blog Zone Bottom Screenshot"
+                  class="absolute top-0 left-0 w-full h-full object-cover hidden"
+                />
+                 <img
+                  src="https://raw.githubusercontent.com/ig-imanish/BlogZone-Clg-project/refs/heads/main/images/Screenshot%202025-08-17%20114243.png"
+                  alt="Blog Zone Top Screenshot"
+                  class="absolute top-0 left-0 w-full h-full object-cover active"
+                />
+                <img
+                  src="https://raw.githubusercontent.com/ig-imanish/BlogZone-Clg-project/refs/heads/main/images/Screenshot%202025-08-17%20114304.png"
+                  alt="Blog Zone Bottom Screenshot"
+                  class="absolute top-0 left-0 w-full h-full object-cover hidden"
+                />
+                 <img
+                  src="https://raw.githubusercontent.com/ig-imanish/BlogZone-Clg-project/refs/heads/main/images/Screenshot%202025-08-17%20114152.png"
+                  alt="Blog Zone Top Screenshot"
+                  class="absolute top-0 left-0 w-full h-full object-cover active"
+                />
+              
+                <!-- Navigation Dots -->
+                <div class="absolute bottom-2 left-0 right-0 flex justify-center gap-1">
+                  <button class="w-2 h-2 rounded-full bg-white opacity-100 project-dot" data-index="0"></button>
+                  <button class="w-2 h-2 rounded-full bg-white opacity-50 project-dot" data-index="1"></button>
+                    <button class="w-2 h-2 rounded-full bg-white opacity-50 project-dot" data-index="1"></button>
+                      <button class="w-2 h-2 rounded-full bg-white opacity-50 project-dot" data-index="1"></button>
+                        <button class="w-2 h-2 rounded-full bg-white opacity-50 project-dot" data-index="1"></button>
+                </div>
+                <!-- Navigation Arrows -->
+                <button class="absolute top-1/2 left-2 transform -translate-y-1/2 bg-black bg-opacity-50 rounded-full p-1 project-prev">
+                  <i data-feather="chevron-left" class="w-4 h-4"></i>
+                </button>
+                <button class="absolute top-1/2 right-2 transform -translate-y-1/2 bg-black bg-opacity-50 rounded-full p-1 project-next">
+                  <i data-feather="chevron-right" class="w-4 h-4"></i>
+                </button>
               </div>
             </div>
-          </div>
+            <div class="p-6 flex flex-col gap-4 flex-grow">
+              <!-- Project Title -->
+              <header class="flex items-center gap-2">
+                <svg class="w-5 h-5 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 4h2a2 2 0 012 2v14a2 2 0 01-2 2H6a2 2 0 01-2-2V6a2 2 0 012-2h2"></path>
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 2v4m8-4v4M4 10h16" />
+                </svg>
+                <h3 class="text-lg font-semibold">Blog Zone</h3>
+              </header>
 
-          <!-- Projects Grid - Second Row -->
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <!-- Project 2: URL Shortener -->
-            <div class="flex flex-col h-full rounded-lg overflow-hidden">
-              <div class="relative w-full" style="padding-bottom: 56.25%">
-                <!-- Image Carousel -->
-                <div
-                  class="project-carousel absolute top-0 left-0 w-full h-full"
-                >
-                  <img
+              <!-- About Section -->
+              <section>
+                <h4 class="font-semibold text-base mb-1 text-teal-400">About</h4>
+                <p class="text-sm text-gray-200">
+               About Blog Zone
+Blog Zone is a modern platform designed to empower writers, bloggers, and content creators to share their stories with the world. We believe that everyone has a unique voice and perspective worth sharing.    </p>
+              </section>
+
+              <!-- Tech Stack Section -->
+              <section>
+                <h4 class="font-semibold text-base mb-1 text-teal-400">Tech Stack</h4>
+                <ul class="flex flex-wrap gap-2 mb-2">
+                  <li class="bg-gray-700 text-xs px-2 py-1 rounded">Html</li>
+                  <li class="bg-gray-700 text-xs px-2 py-1 rounded">CSS</li>
+                  <li class="bg-gray-700 text-xs px-2 py-1 rounded">JavaScript</li>
+                  <li class="bg-gray-700 text-xs px-2 py-1 rounded">NodeJs</li>
+                  <li class="bg-gray-700 text-xs px-2 py-1 rounded">ExpressJs</li>
+                  <li class="bg-gray-700 text-xs px-2 py-1 rounded">JsonWebToken</li>
+                  <li class="bg-gray-700 text-xs px-2 py-1 rounded">MongoDB</li>
+                </ul>
+              </section>
+
+              <!-- Links Section -->
+              <section>
+                <h4 class="font-semibold text-base mb-1 text-teal-400">Links</h4>
+                <div class="flex flex-wrap gap-3">
+                  <a
+                    href="https://github.com/ig-imanish/BlogZone-Clg-project"
+                    target="_blank"
+                    class="flex items-center justify-center gap-1 bg-gray-700 hover:bg-gray-600 text-white px-3 py-1.5 rounded text-sm transition"
+                  >
+                    <i data-feather="github" class="w-4 h-4"></i>
+                    <span>View Code</span>
+                  </a>
+                  <a
+                    href="https://blogzone-clg.netlify.app/"
+                    target="_blank"
+                    class="flex items-center justify-center gap-1 bg-teal-600 hover:bg-teal-700 text-white px-3 py-1.5 rounded text-sm transition"
+                  >
+                    <i data-feather="external-link" class="w-4 h-4"></i>
+                    <span>Live Demo</span>
+                  </a>
+                </div>
+              </section>
+            </div>
+          </article>
+
+
+
+           <article class="flex flex-col h-full rounded-lg overflow-hidden bg-[#181818] border border-gray-700 shadow-lg">
+            <!-- Image Carousel (replace images as needed) -->
+            <div class="relative w-full" style="padding-bottom: 56.25%">
+              <div class="project-carousel absolute top-0 left-0 w-full h-full">
+                <img
+                  src="https://raw.githubusercontent.com/ig-imanish/QuickRef-React-clone/refs/heads/main/img/top.png"
+                  alt="QuickRef.me Top Screenshot"
+                  class="absolute top-0 left-0 w-full h-full object-cover active"
+                />
+                <img
+                  src="https://raw.githubusercontent.com/ig-imanish/QuickRef-React-clone/refs/heads/main/img/bottom.png"
+                  alt="QuickRef.me Bottom Screenshot"
+                  class="absolute top-0 left-0 w-full h-full object-cover hidden"
+                />
+                <!-- Navigation Dots -->
+                <div class="absolute bottom-2 left-0 right-0 flex justify-center gap-1">
+                  <button class="w-2 h-2 rounded-full bg-white opacity-100 project-dot" data-index="0"></button>
+                  <button class="w-2 h-2 rounded-full bg-white opacity-50 project-dot" data-index="1"></button>
+                </div>
+                <!-- Navigation Arrows -->
+                <button class="absolute top-1/2 left-2 transform -translate-y-1/2 bg-black bg-opacity-50 rounded-full p-1 project-prev">
+                  <i data-feather="chevron-left" class="w-4 h-4"></i>
+                </button>
+                <button class="absolute top-1/2 right-2 transform -translate-y-1/2 bg-black bg-opacity-50 rounded-full p-1 project-next">
+                  <i data-feather="chevron-right" class="w-4 h-4"></i>
+                </button>
+              </div>
+            </div>
+            <div class="p-6 flex flex-col gap-4 flex-grow">
+              <!-- Project Title -->
+              <header class="flex items-center gap-2">
+                <svg class="w-5 h-5 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 4h2a2 2 0 012 2v14a2 2 0 01-2 2H6a2 2 0 01-2-2V6a2 2 0 012-2h2"></path>
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 2v4m8-4v4M4 10h16" />
+                </svg>
+                <h3 class="text-lg font-semibold">QuickRef.me UI Clone</h3>
+              </header>
+
+              <!-- About Section -->
+              <section>
+                <h4 class="font-semibold text-base mb-1 text-teal-400">About</h4>
+                <p class="text-sm text-gray-200">
+                  A web-based clone of quickref.me UI , designed to provide concise and easy-to-navigate programming reference sheets. This project is built for learning and practicing modern web development skills.
+                </p>
+              </section>
+
+              <!-- Tech Stack Section -->
+              <section>
+                <h4 class="font-semibold text-base mb-1 text-teal-400">Tech Stack</h4>
+                <ul class="flex flex-wrap gap-2 mb-2">
+                  <li class="bg-gray-700 text-xs px-2 py-1 rounded">React</li>
+                  <li class="bg-gray-700 text-xs px-2 py-1 rounded">CSS</li>
+                  <li class="bg-gray-700 text-xs px-2 py-1 rounded">JavaScript</li>
+                  <li class="bg-gray-700 text-xs px-2 py-1 rounded">Vite</li>                 
+                </ul>
+              </section>
+
+              <!-- Links Section -->
+              <section>
+                <h4 class="font-semibold text-base mb-1 text-teal-400">Links</h4>
+                <div class="flex flex-wrap gap-3">
+                  <a
+                    href="https://github.com/ig-imanish/QuickRef-React-clone"
+                    target="_blank"
+                    class="flex items-center justify-center gap-1 bg-gray-700 hover:bg-gray-600 text-white px-3 py-1.5 rounded text-sm transition"
+                  >
+                    <i data-feather="github" class="w-4 h-4"></i>
+                    <span>View Code</span>
+                  </a>
+                  <a
+                    href="https://quickref.netlify.app/"
+                    target="_blank"
+                    class="flex items-center justify-center gap-1 bg-teal-600 hover:bg-teal-700 text-white px-3 py-1.5 rounded text-sm transition"
+                  >
+                    <i data-feather="external-link" class="w-4 h-4"></i>
+                    <span>Live Demo</span>
+                  </a>
+                </div>
+              </section>
+            </div>
+          </article>
+        </section>
+
+
+          <section class="grid grid-cols-1 md:grid-cols-2 gap-6 ">
+            <article
+  class="flex flex-col h-full rounded-lg overflow-hidden bg-[#181818] border border-gray-700 shadow-lg"
+>
+  <!-- Image Carousel (replace images as needed) -->
+  <div class="relative w-full" style="padding-bottom: 56.25%">
+    <div class="project-carousel absolute top-0 left-0 w-full h-full">
+     <img
                     src="https://raw.githubusercontent.com/ig-imanish/SHORTxURL/refs/heads/main/Screenshot%20(33).png"
                     alt="URL Shortener Screenshot 1"
                     class="absolute top-0 left-0 w-full h-full object-cover active"
@@ -6065,60 +6248,71 @@
                     alt="URL Shortener Screenshot 2"
                     class="absolute top-0 left-0 w-full h-full object-cover hidden"
                   />
+      <!-- Navigation Dots -->
+      <div class="absolute bottom-2 left-0 right-0 flex justify-center gap-1">
+        <button
+          class="w-2 h-2 rounded-full bg-white opacity-100 project-dot"
+          data-index="0"
+        ></button>
+        <button
+          class="w-2 h-2 rounded-full bg-white opacity-50 project-dot"
+          data-index="1"
+        ></button>
+      </div>
+      <!-- Navigation Arrows -->
+      <button
+        class="absolute top-1/2 left-2 transform -translate-y-1/2 bg-black bg-opacity-50 rounded-full p-1 project-prev"
+      >
+        <i data-feather="chevron-left" class="w-4 h-4"></i>
+      </button>
+      <button
+        class="absolute top-1/2 right-2 transform -translate-y-1/2 bg-black bg-opacity-50 rounded-full p-1 project-next"
+      >
+        <i data-feather="chevron-right" class="w-4 h-4"></i>
+      </button>
+    </div>
+  </div>
+  <div class="p-6 flex flex-col gap-4 flex-grow">
+    <!-- Project Title -->
+    <header class="flex items-center gap-2">
+      <svg
+        class="w-5 h-5 text-cyan-400"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M16 4h2a2 2 0 012 2v14a2 2 0 01-2 2H6a2 2 0 01-2-2V6a2 2 0 012-2h2"
+        ></path>
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M8 2v4m8-4v4M4 10h16"
+        />
+      </svg>
+      <h3 class="text-lg font-semibold">URL Shortener</h3>
+    </header>
 
-                  <!-- Navigation Dots -->
-                  <div
-                    class="absolute bottom-2 left-0 right-0 flex justify-center gap-1"
-                  >
-                    <button
-                      class="w-2 h-2 rounded-full bg-white opacity-100 project-dot"
-                      data-index="0"
-                    ></button>
-                    <button
-                      class="w-2 h-2 rounded-full bg-white opacity-50 project-dot"
-                      data-index="1"
-                    ></button>
-                    <!-- <button class="w-2 h-2 rounded-full bg-white opacity-50 project-dot"
-                                        data-index="2"></button> -->
-                  </div>
-
-                  <!-- Navigation Arrows -->
-                  <button
-                    class="absolute top-1/2 left-2 transform -translate-y-1/2 bg-black bg-opacity-50 rounded-full p-1 project-prev"
-                  >
-                    <i data-feather="chevron-left" class="w-4 h-4"></i>
-                  </button>
-                  <button
-                    class="absolute top-1/2 right-2 transform -translate-y-1/2 bg-black bg-opacity-50 rounded-full p-1 project-next"
-                  >
-                    <i data-feather="chevron-right" class="w-4 h-4"></i>
-                  </button>
-                </div>
-              </div>
-              <div class="pt-4 flex-grow">
-                <h3 class="text-lg font-semibold mb-2 flex items-center gap-2">
-                  <svg
-                    class="w-5 h-5 text-purple-500"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"
-                    ></path>
-                  </svg>
-                  URL Shortener
-                </h3>
-                <p class="text-sm mb-4">
-                  SHORTxURL is a Spring Boot web project that provides URL
+    <!-- About Section -->
+    <section>
+      <h4 class="font-semibold text-base mb-1 text-teal-400">About</h4>
+      <p class="text-sm text-gray-200">
+           SHORTxURL is a Spring Boot web project that provides URL
                   shortening functionality. It shortens your long URL with a
                   custom name! Making sharing easier.
-                </p>
-                <div class="flex flex-wrap gap-2 mb-4">
-                  <span class="bg-gray-700 text-xs px-2 py-1 rounded"
+           
+      </p>
+    </section>
+
+    <!-- Tech Stack Section -->
+    <section>
+      <h4 class="font-semibold text-base mb-1 text-teal-400">Tech Stack</h4>
+      <ul class="flex flex-wrap gap-2 mb-2">
+           <span class="bg-gray-700 text-xs px-2 py-1 rounded"
                     >Spring Boot</span
                   >
                   <span class="bg-gray-700 text-xs px-2 py-1 rounded"
@@ -6134,9 +6328,14 @@
                   <span class="bg-gray-700 text-xs px-2 py-1 rounded"
                     >Docker</span
                   >
-                </div>
-                <div class="flex flex-wrap gap-3 mt-auto">
-                  <a
+      </ul>
+    </section>
+
+    <!-- Links Section -->
+    <section>
+      <h4 class="font-semibold text-base mb-1 text-teal-400">Links</h4>
+      <div class="flex flex-wrap gap-3">
+         <a
                     href="https://github.com/ig-imanish/SHORTxURL"
                     target="_blank"
                     class="flex items-center justify-center gap-1 bg-gray-700 hover:bg-gray-600 text-white px-3 py-1.5 rounded text-sm transition w-[calc(50%-0.375rem)] sm:w-auto"
@@ -6160,17 +6359,18 @@
                     <i data-feather="file-text" class="w-4 h-4"></i>
                     <span>Project Info</span>
                   </a>
-                </div>
-              </div>
-            </div>
-            <!-- Project 3: Portfolio Website -->
-            <div class="flex flex-col h-full rounded-lg overflow-hidden">
-              <div class="relative w-full" style="padding-bottom: 56.25%">
-                <!-- Image Carousel -->
-                <div
-                  class="project-carousel absolute top-0 left-0 w-full h-full"
-                >
-                  <img
+      </div>
+    </section>
+  </div>
+</article>
+
+<article
+  class="flex flex-col h-full rounded-lg overflow-hidden bg-[#181818] border border-gray-700 shadow-lg"
+>
+  <!-- Image Carousel (replace images as needed) -->
+  <div class="relative w-full" style="padding-bottom: 56.25%">
+    <div class="project-carousel absolute top-0 left-0 w-full h-full">
+        <img
                     src="https://raw.githubusercontent.com/ig-imanish/SimpleChatBot/refs/heads/main/pic.png"
                     alt="ChatBot Desktop"
                     class="absolute top-0 left-0 w-full h-full object-cover active"
@@ -6180,60 +6380,68 @@
                     alt="ChatBot Mobile"
                     class="absolute top-0 left-0 w-full h-full object-cover hidden"
                   />
+      <!-- Navigation Dots -->
+      <div class="absolute bottom-2 left-0 right-0 flex justify-center gap-1">
+        <button
+          class="w-2 h-2 rounded-full bg-white opacity-100 project-dot"
+          data-index="0"
+        ></button>
+        <button
+          class="w-2 h-2 rounded-full bg-white opacity-50 project-dot"
+          data-index="1"
+        ></button>
+      </div>
+      <!-- Navigation Arrows -->
+      <button
+        class="absolute top-1/2 left-2 transform -translate-y-1/2 bg-black bg-opacity-50 rounded-full p-1 project-prev"
+      >
+        <i data-feather="chevron-left" class="w-4 h-4"></i>
+      </button>
+      <button
+        class="absolute top-1/2 right-2 transform -translate-y-1/2 bg-black bg-opacity-50 rounded-full p-1 project-next"
+      >
+        <i data-feather="chevron-right" class="w-4 h-4"></i>
+      </button>
+    </div>
+  </div>
+  <div class="p-6 flex flex-col gap-4 flex-grow">
+    <!-- Project Title -->
+    <header class="flex items-center gap-2">
+      <svg
+        class="w-5 h-5 text-cyan-400"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M16 4h2a2 2 0 012 2v14a2 2 0 01-2 2H6a2 2 0 01-2-2V6a2 2 0 012-2h2"
+        ></path>
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M8 2v4m8-4v4M4 10h16"
+        />
+      </svg>
+      <h3 class="text-lg font-semibold">ChatBot</h3>
+    </header>
 
-                  <!-- Navigation Dots -->
-                  <div
-                    class="absolute bottom-2 left-0 right-0 flex justify-center gap-1"
-                  >
-                    <button
-                      class="w-2 h-2 rounded-full bg-white opacity-100 project-dot"
-                      data-index="0"
-                    ></button>
-                    <button
-                      class="w-2 h-2 rounded-full bg-white opacity-50 project-dot"
-                      data-index="1"
-                    ></button>
-                    <button
-                      class="w-2 h-2 rounded-full bg-white opacity-50 project-dot"
-                      data-index="2"
-                    ></button>
-                  </div>
+    <!-- About Section -->
+    <section>
+      <h4 class="font-semibold text-base mb-1 text-teal-400">About</h4>
+      <p class="text-sm text-gray-200">
+       Simple ChatBot Using Java Servlet JSP.
+      </p>
+    </section>
 
-                  <!-- Navigation Arrows -->
-                  <button
-                    class="absolute top-1/2 left-2 transform -translate-y-1/2 bg-black bg-opacity-50 rounded-full p-1 project-prev"
-                  >
-                    <i data-feather="chevron-left" class="w-4 h-4"></i>
-                  </button>
-                  <button
-                    class="absolute top-1/2 right-2 transform -translate-y-1/2 bg-black bg-opacity-50 rounded-full p-1 project-next"
-                  >
-                    <i data-feather="chevron-right" class="w-4 h-4"></i>
-                  </button>
-                </div>
-              </div>
-              <div class="pt-4 flex-grow">
-                <h3 class="text-lg font-semibold mb-2 flex items-center gap-2">
-                  <svg
-                    class="w-5 h-5 text-yellow-500"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"
-                    ></path>
-                  </svg>
-                  ChatBot
-                </h3>
-                <p class="text-sm mb-4">
-                  Simple ChatBot Using Java Servlet JSP.
-                </p>
-                <div class="flex flex-wrap gap-2 mb-4">
-                  <span class="bg-gray-700 text-xs px-2 py-1 rounded"
+    <!-- Tech Stack Section -->
+    <section>
+      <h4 class="font-semibold text-base mb-1 text-teal-400">Tech Stack</h4>
+      <ul class="flex flex-wrap gap-2 mb-2">
+        <span class="bg-gray-700 text-xs px-2 py-1 rounded"
                     >html</span
                   >
                   <span class="bg-gray-700 text-xs px-2 py-1 rounded">css</span>
@@ -6241,9 +6449,14 @@
                   <span class="bg-gray-700 text-xs px-2 py-1 rounded"
                     >Servlet</span
                   >
-                </div>
-                <div class="flex flex-wrap gap-3 mt-auto">
-                  <a
+      </ul>
+    </section>
+
+    <!-- Links Section -->
+    <section>
+      <h4 class="font-semibold text-base mb-1 text-teal-400">Links</h4>
+      <div class="flex flex-wrap gap-3">
+        <a
                     href="https://github.com/ig-imanish/SimpleChatBot"
                     target="_blank"
                     class="flex items-center justify-center gap-1 bg-gray-700 hover:bg-gray-600 text-white px-3 py-1.5 rounded text-sm transition w-[calc(50%-0.375rem)] sm:w-auto"
@@ -6251,14 +6464,7 @@
                     <i data-feather="github" class="w-4 h-4"></i>
                     <span>View Code</span>
                   </a>
-                  <a
-                    href="https://github.com/ig-imanish/SimpleChatBot"
-                    target="_blank"
-                    class="flex items-center justify-center gap-1 bg-teal-600 hover:bg-teal-700 text-white px-3 py-1.5 rounded text-sm transition w-[calc(50%-0.375rem)] sm:w-auto"
-                  >
-                    <i data-feather="external-link" class="w-4 h-4"></i>
-                    <span>Live Demo</span>
-                  </a>
+               
                   <a
                     href="./projects/chatbot.html"
                     target="_blank"
@@ -6267,81 +6473,13 @@
                     <i data-feather="file-text" class="w-4 h-4"></i>
                     <span>Project Info</span>
                   </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-      <!-- Project 3rd row -->
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
-        <div class="flex flex-col h-full rounded-lg overflow-hidden">
-          <div class="relative w-full" style="padding-bottom: 56.25%">
-            <!-- Image Carousel -->
-            <div class="project-carousel absolute top-0 left-0 w-full h-full">
-              <img
-                src="https://raw.githubusercontent.com/ig-imanish/QuickRef-React-clone/refs/heads/main/img/top.png"
-                alt="QuickRef.me Top Screenshot"
-                class="absolute top-0 left-0 w-full h-full object-cover active"
-              />
-              <img
-                src="https://raw.githubusercontent.com/ig-imanish/QuickRef-React-clone/refs/heads/main/img/bottom.png"
-                alt="QuickRef.me Bottom Screenshot"
-                class="absolute top-0 left-0 w-full h-full object-cover hidden"
-              />
-              <!-- Navigation Dots -->
-              <div class="absolute bottom-2 left-0 right-0 flex justify-center gap-1">
-                <button class="w-2 h-2 rounded-full bg-white opacity-100 project-dot" data-index="0"></button>
-                <button class="w-2 h-2 rounded-full bg-white opacity-50 project-dot" data-index="1"></button>
-              </div>
-              <!-- Navigation Arrows -->
-              <button class="absolute top-1/2 left-2 transform -translate-y-1/2 bg-black bg-opacity-50 rounded-full p-1 project-prev">
-                <i data-feather="chevron-left" class="w-4 h-4"></i>
-              </button>
-              <button class="absolute top-1/2 right-2 transform -translate-y-1/2 bg-black bg-opacity-50 rounded-full p-1 project-next">
-                <i data-feather="chevron-right" class="w-4 h-4"></i>
-              </button>
-            </div>
-          </div>
-          <div class="pt-4 flex-grow">
-            <h3 class="text-lg font-semibold mb-2 flex items-center gap-2">
-              <svg class="w-5 h-5 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 4h2a2 2 0 012 2v14a2 2 0 01-2 2H6a2 2 0 01-2-2V6a2 2 0 012-2h2"> </path>
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 2v4m8-4v4M4 10h16" />
-              </svg>
-              QuickRef.me
-            </h3>
-            <p class="text-sm mb-4">
-              A web-based clone of quickref.me, designed to provide concise and easy-to-navigate programming reference sheets. This project is built for learning and practicing modern web development skills.
-            </p>
-            <div class="flex flex-wrap gap-2 mb-4">
-              <span class="bg-gray-700 text-xs px-2 py-1 rounded">React</span>
-              <span class="bg-gray-700 text-xs px-2 py-1 rounded">CSS</span>
-              <span class="bg-gray-700 text-xs px-2 py-1 rounded">JavaScript</span>
-              <span class="bg-gray-700 text-xs px-2 py-1 rounded">Vite</span>
-              <span class="bg-gray-700 text-xs px-2 py-1 rounded">HTML</span>
-              <span class="bg-gray-700 text-xs px-2 py-1 rounded">Netlify</span>
-            </div>
-            <div class="flex flex-wrap gap-3 mt-auto">
-              <a
-                href="https://github.com/ig-imanish/QuickRef-React-clone"
-                target="_blank"
-                class="flex items-center justify-center gap-1 bg-gray-700 hover:bg-gray-600 text-white px-3 py-1.5 rounded text-sm transition w-[calc(50%-0.375rem)] sm:w-auto"
-              >
-                <i data-feather="github" class="w-4 h-4"></i>
-                <span>View Code</span>
-              </a>
-              <a
-                href="https://quickref.netlify.app/"
-                target="_blank"
-                class="flex items-center justify-center gap-1 bg-teal-600 hover:bg-teal-700 text-white px-3 py-1.5 rounded text-sm transition w-[calc(50%-0.375rem)] sm:w-auto"
-              >
-                <i data-feather="external-link" class="w-4 h-4"></i>
-                <span>Live Demo</span>
-              </a>
-            </div>
-          </div>
-        </div>
       </div>
+    </section>
+  </div>
+</article>
+
+
+          </section>
    
         </div>
       </div>
