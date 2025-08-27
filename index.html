@@ -372,6 +372,237 @@
         width: 14px;
         height: 14px;
       }
+
+      .star {
+        position: absolute;
+        background: #fff;
+        border-radius: 50%;
+        animation: twinkle 2s ease-in-out infinite alternate;
+      }
+
+      .star.small {
+        width: 1px;
+        height: 1px;
+      }
+
+      .star.medium {
+        width: 2px;
+        height: 2px;
+      }
+
+      .star.large {
+        width: 3px;
+        height: 3px;
+      }
+
+      @keyframes twinkle {
+        0% {
+          opacity: 0.2;
+          transform: scale(0.7);
+          box-shadow: 0 0 4px rgba(255, 255, 255, 0.2);
+        }
+        100% {
+          opacity: 0.9;
+          transform: scale(1.3);
+          box-shadow: 0 0 12px rgba(255, 255, 255, 0.7);
+        }
+      }
+
+      .moon-glow {
+        position: absolute;
+        top: 10px;
+        right: 10%;
+        width: 60px;
+        height: 60px;
+        background: radial-gradient(
+          circle,
+          rgba(255, 255, 255, 0.1) 0%,
+          rgba(255, 255, 255, 0) 70%
+        );
+        border-radius: 50%;
+        pointer-events: none;
+      }
+
+      .star:nth-child(1) {
+        top: 15px;
+        left: 8%;
+        animation-delay: 0s;
+        animation-duration: 2.5s;
+      }
+      .star:nth-child(2) {
+        top: 35px;
+        left: 15%;
+        animation-delay: 0.3s;
+        animation-duration: 1.8s;
+      }
+      .star:nth-child(3) {
+        top: 20px;
+        left: 22%;
+        animation-delay: 0.7s;
+        animation-duration: 2.2s;
+      }
+      .star:nth-child(4) {
+        top: 45px;
+        left: 28%;
+        animation-delay: 1.1s;
+        animation-duration: 3s;
+      }
+      .star:nth-child(5) {
+        top: 12px;
+        left: 35%;
+        animation-delay: 0.5s;
+        animation-duration: 2.8s;
+      }
+      .star:nth-child(6) {
+        top: 38px;
+        left: 42%;
+        animation-delay: 1.4s;
+        animation-duration: 2s;
+      }
+      .star:nth-child(7) {
+        top: 25px;
+        left: 48%;
+        animation-delay: 0.9s;
+        animation-duration: 2.7s;
+      }
+      .star:nth-child(8) {
+        top: 18px;
+        left: 55%;
+        animation-delay: 0.2s;
+        animation-duration: 2.3s;
+      }
+      .star:nth-child(9) {
+        top: 40px;
+        left: 62%;
+        animation-delay: 1.6s;
+        animation-duration: 1.9s;
+      }
+      .star:nth-child(10) {
+        top: 28px;
+        left: 68%;
+        animation-delay: 0.8s;
+        animation-duration: 2.6s;
+      }
+      .star:nth-child(11) {
+        top: 15px;
+        left: 75%;
+        animation-delay: 1.2s;
+        animation-duration: 2.4s;
+      }
+      .star:nth-child(12) {
+        top: 42px;
+        left: 82%;
+        animation-delay: 0.4s;
+        animation-duration: 2.1s;
+      }
+      .star:nth-child(13) {
+        top: 32px;
+        left: 88%;
+        animation-delay: 1.8s;
+        animation-duration: 2.9s;
+      }
+      .star:nth-child(14) {
+        top: 22px;
+        left: 92%;
+        animation-delay: 0.6s;
+        animation-duration: 2.5s;
+      }
+      .star:nth-child(15) {
+        top: 50px;
+        left: 95%;
+        animation-delay: 1.3s;
+        animation-duration: 1.7s;
+      }
+      .star:nth-child(16) {
+        top: 8px;
+        left: 3%;
+        animation-delay: 0.1s;
+        animation-duration: 3.2s;
+      }
+      .star:nth-child(17) {
+        top: 48px;
+        left: 12%;
+        animation-delay: 1.7s;
+        animation-duration: 2.2s;
+      }
+      .star:nth-child(18) {
+        top: 30px;
+        left: 18%;
+        animation-delay: 0.4s;
+        animation-duration: 2.8s;
+      }
+      .star:nth-child(19) {
+        top: 6px;
+        left: 38%;
+        animation-delay: 1.9s;
+        animation-duration: 2.1s;
+      }
+      .star:nth-child(20) {
+        top: 52px;
+        left: 58%;
+        animation-delay: 0.8s;
+        animation-duration: 2.7s;
+      }
+      .star:nth-child(21) {
+        top: 10px;
+        left: 25%;
+        animation-delay: 0.5s;
+        animation-duration: 2.4s;
+      }
+      .star:nth-child(22) {
+        top: 50px;
+        left: 30%;
+        animation-delay: 1s;
+        animation-duration: 2s;
+      }
+      .star:nth-child(23) {
+        top: 20px;
+        left: 45%;
+        animation-delay: 0.3s;
+        animation-duration: 2.9s;
+      }
+      .star:nth-child(24) {
+        top: 35px;
+        left: 50%;
+        animation-delay: 1.5s;
+        animation-duration: 2.3s;
+      }
+      .star:nth-child(25) {
+        top: 15px;
+        left: 60%;
+        animation-delay: 0.7s;
+        animation-duration: 2.6s;
+      }
+      .star:nth-child(26) {
+        top: 45px;
+        left: 70%;
+        animation-delay: 1.2s;
+        animation-duration: 1.8s;
+      }
+      .star:nth-child(27) {
+        top: 25px;
+        left: 80%;
+        animation-delay: 0.9s;
+        animation-duration: 2.5s;
+      }
+      .star:nth-child(28) {
+        top: 5px;
+        left: 85%;
+        animation-delay: 0.2s;
+        animation-duration: 3s;
+      }
+      .star:nth-child(29) {
+        top: 40px;
+        left: 90%;
+        animation-delay: 1.4s;
+        animation-duration: 2.2s;
+      }
+      .star:nth-child(30) {
+        top: 30px;
+        left: 97%;
+        animation-delay: 0.6s;
+        animation-duration: 2.7s;
+      }
     </style>
   </head>
 
@@ -498,6 +729,40 @@
 
     <!-- Navbar -->
     <nav class="w-full bg-[#1e1e1e] shadow-md p-4 fixed top-0 z-50">
+      <div class="absolute w-full h-full top-0 left-0 pointer-events-none">
+        <div class="moon-glow"></div>
+        <div class="star small"></div>
+        <div class="star medium"></div>
+        <div class="star small"></div>
+        <div class="star large"></div>
+        <div class="star small"></div>
+        <div class="star medium"></div>
+        <div class="star small"></div>
+        <div class="star small"></div>
+        <div class="star medium"></div>
+        <div class="star small"></div>
+        <div class="star large"></div>
+        <div class="star small"></div>
+        <div class="star medium"></div>
+        <div class="star small"></div>
+        <div class="star small"></div>
+        <div class="star medium"></div>
+        <div class="star small"></div>
+        <div class="star small"></div>
+        <div class="star large"></div>
+        <div class="star small"></div>
+        <div class="star medium"></div>
+        <div class="star small"></div>
+        <div class="star large"></div>
+        <div class="star small"></div>
+        <div class="star medium"></div>
+        <div class="star small"></div>
+        <div class="star small"></div>
+        <div class="star medium"></div>
+        <div class="star small"></div>
+        <div class="star large"></div>
+      </div>
+
       <div class="flex justify-between items-center max-w-7xl mx-auto">
         <div class="flex items-center gap-3">
           <img
@@ -633,19 +898,40 @@
               class="w-16 h-16 rounded-full border-2 border-white bg-blue-600"
             />
             <div>
-              <p class="text-md font-bold flex" style="justify-content: center; gap: 5px; align-items: center;">
+              <p
+                class="text-md font-bold flex"
+                style="justify-content: center; gap: 5px; align-items: center"
+              >
                 Jabsz Gaming Studios
-                <a aria-label="Open Slugy external link" class="text-gray-400 hover:text-white flex items-center" href="#" rel="noopener noreferrer" target="_blank">
-                  <i class="fas fa-external-link-alt fa-xs">
-                  </i>
+                <a
+                  aria-label="Open Slugy external link"
+                  class="text-gray-400 hover:text-white flex items-center"
+                  href="#"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  <i class="fas fa-external-link-alt fa-xs"> </i>
                 </a>
               </p>
-   
-              </p>
-             <div class="flex items-center gap-1">
-               <p class="text-sm text-gray-400 ">Full-Stack Developer</p> <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="text-green-500" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M10.007 2.10377C8.60544 1.65006 7.08181 2.28116 6.41156 3.59306L5.60578 5.17023C5.51004 5.35763 5.35763 5.51004 5.17023 5.60578L3.59306 6.41156C2.28116 7.08181 1.65006 8.60544 2.10377 10.007L2.64923 11.692C2.71404 11.8922 2.71404 12.1078 2.64923 12.308L2.10377 13.993C1.65006 15.3946 2.28116 16.9182 3.59306 17.5885L5.17023 18.3942C5.35763 18.49 5.51004 18.6424 5.60578 18.8298L6.41156 20.407C7.08181 21.7189 8.60544 22.35 10.007 21.8963L11.692 21.3508C11.8922 21.286 12.1078 21.286 12.308 21.3508L13.993 21.8963C15.3946 22.35 16.9182 21.7189 17.5885 20.407L18.3942 18.8298C18.49 18.6424 18.6424 18.49 18.8298 18.3942L20.407 17.5885C21.7189 16.9182 22.35 15.3946 21.8963 13.993L21.3508 12.308C21.286 12.1078 21.286 11.8922 21.3508 11.692L21.8963 10.007C22.35 8.60544 21.7189 7.08181 20.407 6.41156L18.8298 5.60578C18.6424 5.51004 18.49 5.35763 18.3942 5.17023L17.5885 3.59306C16.9182 2.28116 15.3946 1.65006 13.993 2.10377L12.308 2.64923C12.1078 2.71403 11.8922 2.71404 11.692 2.64923L10.007 2.10377ZM6.75977 11.7573L8.17399 10.343L11.0024 13.1715L16.6593 7.51465L18.0735 8.92886L11.0024 15.9999L6.75977 11.7573Z"></path></svg>
- 
-             </div>           </div>
+
+              <div class="flex items-center gap-1">
+                <p class="text-sm text-gray-400">Full-Stack Developer</p>
+                <svg
+                  stroke="currentColor"
+                  fill="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 24 24"
+                  class="text-green-500"
+                  height="1em"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M10.007 2.10377C8.60544 1.65006 7.08181 2.28116 6.41156 3.59306L5.60578 5.17023C5.51004 5.35763 5.35763 5.51004 5.17023 5.60578L3.59306 6.41156C2.28116 7.08181 1.65006 8.60544 2.10377 10.007L2.64923 11.692C2.71404 11.8922 2.71404 12.1078 2.64923 12.308L2.10377 13.993C1.65006 15.3946 2.28116 16.9182 3.59306 17.5885L5.17023 18.3942C5.35763 18.49 5.51004 18.6424 5.60578 18.8298L6.41156 20.407C7.08181 21.7189 8.60544 22.35 10.007 21.8963L11.692 21.3508C11.8922 21.286 12.1078 21.286 12.308 21.3508L13.993 21.8963C15.3946 22.35 16.9182 21.7189 17.5885 20.407L18.3942 18.8298C18.49 18.6424 18.6424 18.49 18.8298 18.3942L20.407 17.5885C21.7189 16.9182 22.35 15.3946 21.8963 13.993L21.3508 12.308C21.286 12.1078 21.286 11.8922 21.3508 11.692L21.8963 10.007C22.35 8.60544 21.7189 7.08181 20.407 6.41156L18.8298 5.60578C18.6424 5.51004 18.49 5.35763 18.3942 5.17023L17.5885 3.59306C16.9182 2.28116 15.3946 1.65006 13.993 2.10377L12.308 2.64923C12.1078 2.71403 11.8922 2.71404 11.692 2.64923L10.007 2.10377ZM6.75977 11.7573L8.17399 10.343L11.0024 13.1715L16.6593 7.51465L18.0735 8.92886L11.0024 15.9999L6.75977 11.7573Z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
           </div>
           <ul class="list-disc list-inside text-sm space-y-2">
             <li>
@@ -5660,12 +5946,16 @@
             Projects
           </h2>
 
-        <section class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-          <article class="flex flex-col h-full rounded-lg overflow-hidden bg-[#181818] border border-gray-700 shadow-lg">
-            <!-- Image Carousel (replace images as needed) -->
-            <div class="relative w-full" style="padding-bottom: 56.25%">
-              <div class="project-carousel absolute top-0 left-0 w-full h-full">
-                 <img
+          <section class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+            <article
+              class="flex flex-col h-full rounded-lg overflow-hidden bg-[#181818] border border-gray-700 shadow-lg"
+            >
+              <!-- Image Carousel (replace images as needed) -->
+              <div class="relative w-full" style="padding-bottom: 56.25%">
+                <div
+                  class="project-carousel absolute top-0 left-0 w-full h-full"
+                >
+                  <img
                     src="https://raw.githubusercontent.com/ig-imanish/ig-imanish.github.io/refs/heads/main/Screenshot%20(25).png"
                     alt="Blogging Website Homepage"
                     class="absolute top-0 left-0 w-full h-full object-cover active"
@@ -5700,9 +5990,11 @@
                     alt="Blogging Website Post"
                     class="absolute top-0 left-0 w-full h-full object-cover hidden"
                   />
-                <!-- Navigation Dots -->
-                <div class="absolute bottom-2 left-0 right-0 flex justify-center gap-1">
-                   <button
+                  <!-- Navigation Dots -->
+                  <div
+                    class="absolute bottom-2 left-0 right-0 flex justify-center gap-1"
+                  >
+                    <button
                       class="w-2 h-2 rounded-full bg-white opacity-100 project-dot"
                       data-index="0"
                     ></button>
@@ -5730,152 +6022,181 @@
                       class="w-2 h-2 rounded-full bg-white opacity-50 project-dot"
                       data-index="6"
                     ></button>
+                  </div>
+                  <!-- Navigation Arrows -->
+                  <button
+                    class="absolute top-1/2 left-2 transform -translate-y-1/2 bg-black bg-opacity-50 rounded-full p-1 project-prev"
+                  >
+                    <i data-feather="chevron-left" class="w-4 h-4"></i>
+                  </button>
+                  <button
+                    class="absolute top-1/2 right-2 transform -translate-y-1/2 bg-black bg-opacity-50 rounded-full p-1 project-next"
+                  >
+                    <i data-feather="chevron-right" class="w-4 h-4"></i>
+                  </button>
                 </div>
-                <!-- Navigation Arrows -->
-                <button class="absolute top-1/2 left-2 transform -translate-y-1/2 bg-black bg-opacity-50 rounded-full p-1 project-prev">
-                  <i data-feather="chevron-left" class="w-4 h-4"></i>
-                </button>
-                <button class="absolute top-1/2 right-2 transform -translate-y-1/2 bg-black bg-opacity-50 rounded-full p-1 project-next">
-                  <i data-feather="chevron-right" class="w-4 h-4"></i>
-                </button>
               </div>
-            </div>
-            <div class="p-6 flex flex-col gap-4 flex-grow">
-              <!-- Project Title -->
-              <header class="flex items-center gap-2">
-                <svg class="w-5 h-5 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 4h2a2 2 0 012 2v14a2 2 0 01-2 2H6a2 2 0 01-2-2V6a2 2 0 012-2h2"></path>
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 2v4m8-4v4M4 10h16" />
-                </svg>
-                <h3 class="text-lg font-semibold">SecureTOTP</h3>
-              </header>
+              <div class="p-6 flex flex-col gap-4 flex-grow">
+                <!-- Project Title -->
+                <header class="flex items-center gap-2">
+                  <svg
+                    class="w-5 h-5 text-cyan-400"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M16 4h2a2 2 0 012 2v14a2 2 0 01-2 2H6a2 2 0 01-2-2V6a2 2 0 012-2h2"
+                    ></path>
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M8 2v4m8-4v4M4 10h16"
+                    />
+                  </svg>
+                  <h3 class="text-lg font-semibold">SecureTOTP</h3>
+                </header>
 
-              <!-- About Section -->
-              <section>
-                <h4 class="font-semibold text-base mb-1 text-teal-400">About</h4>
-                <p class="text-sm text-gray-200">
-                 A robust two-factor authentication system implementing
-                  Time-based One-Time Password (TOTP) for enhanced application
-                  security. Built with Spring Boot microservices architecture,
-                  it provides a seamless and secure authentication experience.
+                <!-- About Section -->
+                <section>
+                  <h4 class="font-semibold text-base mb-1 text-teal-400">
+                    About
+                  </h4>
+                  <p class="text-sm text-gray-200">
+                    A robust two-factor authentication system implementing
+                    Time-based One-Time Password (TOTP) for enhanced application
+                    security. Built with Spring Boot microservices architecture,
+                    it provides a seamless and secure authentication experience.
                   </p>
-              </section>
+                </section>
 
-              <!-- Tech Stack Section -->
-              <section>
-                <h4 class="font-semibold text-base mb-1 text-teal-400">Tech Stack</h4>
-                <ul class="flex flex-wrap gap-2 mb-2">
-                  <div
-                    class="tech-tag bg-gray-700 text-xs px-2 py-1 rounded hover:bg-gray-600 flex items-center gap-1"
-                  >
-                    Java 21
-                  </div>
-                  <div
-                    class="tech-tag bg-gray-700 text-xs px-2 py-1 rounded hover:bg-gray-600 flex items-center gap-1"
-                  >
-                    Spring Boot 3.5.1
-                  </div>
-                  <div
-                    class="tech-tag bg-gray-700 text-xs px-2 py-1 rounded hover:bg-gray-600 flex items-center gap-1"
-                  >
-                    Spring microservices
-                  </div>
+                <!-- Tech Stack Section -->
+                <section>
+                  <h4 class="font-semibold text-base mb-1 text-teal-400">
+                    Tech Stack
+                  </h4>
+                  <ul class="flex flex-wrap gap-2 mb-2">
+                    <div
+                      class="tech-tag bg-gray-700 text-xs px-2 py-1 rounded hover:bg-gray-600 flex items-center gap-1"
+                    >
+                      Java 21
+                    </div>
+                    <div
+                      class="tech-tag bg-gray-700 text-xs px-2 py-1 rounded hover:bg-gray-600 flex items-center gap-1"
+                    >
+                      Spring Boot 3.5.1
+                    </div>
+                    <div
+                      class="tech-tag bg-gray-700 text-xs px-2 py-1 rounded hover:bg-gray-600 flex items-center gap-1"
+                    >
+                      Spring microservices
+                    </div>
 
-                  <div
-                    class="tech-tag bg-gray-700 text-xs px-2 py-1 rounded hover:bg-gray-600 flex items-center gap-1"
-                  >
-                    MongoDB
-                  </div>
+                    <div
+                      class="tech-tag bg-gray-700 text-xs px-2 py-1 rounded hover:bg-gray-600 flex items-center gap-1"
+                    >
+                      MongoDB
+                    </div>
 
-                  <div
-                    class="tech-tag bg-gray-700 text-xs px-2 py-1 rounded hover:bg-gray-600 flex items-center gap-1"
-                  >
-                    Spring Security
-                  </div>
+                    <div
+                      class="tech-tag bg-gray-700 text-xs px-2 py-1 rounded hover:bg-gray-600 flex items-center gap-1"
+                    >
+                      Spring Security
+                    </div>
 
-                  <div
-                    class="tech-tag bg-gray-700 text-xs px-2 py-1 rounded hover:bg-gray-600 flex items-center gap-1"
-                  >
-                    Spring oauth2
-                  </div>
+                    <div
+                      class="tech-tag bg-gray-700 text-xs px-2 py-1 rounded hover:bg-gray-600 flex items-center gap-1"
+                    >
+                      Spring oauth2
+                    </div>
 
-                  <div
-                    class="tech-tag bg-gray-700 text-xs px-2 py-1 rounded hover:bg-gray-600 flex items-center gap-1"
-                  >
-                    Jwt Authentication
-                  </div>
+                    <div
+                      class="tech-tag bg-gray-700 text-xs px-2 py-1 rounded hover:bg-gray-600 flex items-center gap-1"
+                    >
+                      Jwt Authentication
+                    </div>
 
-                  <div
-                    class="tech-tag bg-gray-700 text-xs px-2 py-1 rounded hover:bg-gray-600 flex items-center gap-1"
-                  >
-                    Spring mail
-                  </div>
-                  <div
-                    class="tech-tag bg-gray-700 text-xs px-2 py-1 rounded hover:bg-gray-600 flex items-center gap-1"
-                  >
-                    Maven
-                  </div>
-                  <div
-                    class="tech-tag bg-gray-700 text-xs px-2 py-1 rounded hover:bg-gray-600 flex items-center gap-1"
-                  >
-                    html
-                  </div>
-                  <div
-                    class="tech-tag bg-gray-700 text-xs px-2 py-1 rounded hover:bg-gray-600 flex items-center gap-1"
-                  >
-                    css
-                  </div>
-                  <div
-                    class="tech-tag bg-gray-700 text-xs px-2 py-1 rounded hover:bg-gray-600 flex items-center gap-1"
-                  >
-                    JavaScript
-                  </div>
-                  <div
-                    class="tech-tag bg-gray-700 text-xs px-2 py-1 rounded hover:bg-gray-600 flex items-center gap-1"
-                  >
-                    Docker
-                  </div> </ul>
-              </section>
+                    <div
+                      class="tech-tag bg-gray-700 text-xs px-2 py-1 rounded hover:bg-gray-600 flex items-center gap-1"
+                    >
+                      Spring mail
+                    </div>
+                    <div
+                      class="tech-tag bg-gray-700 text-xs px-2 py-1 rounded hover:bg-gray-600 flex items-center gap-1"
+                    >
+                      Maven
+                    </div>
+                    <div
+                      class="tech-tag bg-gray-700 text-xs px-2 py-1 rounded hover:bg-gray-600 flex items-center gap-1"
+                    >
+                      html
+                    </div>
+                    <div
+                      class="tech-tag bg-gray-700 text-xs px-2 py-1 rounded hover:bg-gray-600 flex items-center gap-1"
+                    >
+                      css
+                    </div>
+                    <div
+                      class="tech-tag bg-gray-700 text-xs px-2 py-1 rounded hover:bg-gray-600 flex items-center gap-1"
+                    >
+                      JavaScript
+                    </div>
+                    <div
+                      class="tech-tag bg-gray-700 text-xs px-2 py-1 rounded hover:bg-gray-600 flex items-center gap-1"
+                    >
+                      Docker
+                    </div>
+                  </ul>
+                </section>
 
-              <!-- Links Section -->
-              <section>
-                <h4 class="font-semibold text-base mb-1 text-teal-400">Links</h4>
-                <div class="flex flex-wrap gap-3">
-                  <a
-                    href="https://github.com/ig-imanish/SecureTOTP-Frontend"
-                    target="_blank"
-                    class="flex items-center justify-center gap-1 bg-gray-700 hover:bg-gray-600 text-white px-3 py-1.5 rounded text-sm transition w-[calc(50%-0.375rem)] sm:w-auto"
-                  >
-                    <i data-feather="github" class="w-4 h-4"></i>
-                    <span>View Code</span>
-                  </a>
-                  <a
-                    href="https://securetotp.netlify.app/"
-                    target="_blank"
-                    class="flex items-center justify-center gap-1 bg-teal-600 hover:bg-teal-700 text-white px-3 py-1.5 rounded text-sm transition w-[calc(50%-0.375rem)] sm:w-auto"
-                  >
-                    <i data-feather="external-link" class="w-4 h-4"></i>
-                    <span>Live Demo</span>
-                  </a>
-                  <a
-                    href="./projects/securetotp.html"
-                    target="_blank"
-                    class="flex items-center justify-center gap-1 bg-blue-600 hover:bg-blue-700 text-white px-3 py-1.5 rounded text-sm transition mt-2 sm:mt-0 w-full sm:w-auto"
-                  >
-                    <i data-feather="file-text" class="w-4 h-4"></i>
-                    <span>Project Info</span>
-                  </a>
-                </div>
-              </section>
-            </div>
-          </article>
+                <!-- Links Section -->
+                <section>
+                  <h4 class="font-semibold text-base mb-1 text-teal-400">
+                    Links
+                  </h4>
+                  <div class="flex flex-wrap gap-3">
+                    <a
+                      href="https://github.com/ig-imanish/SecureTOTP-Frontend"
+                      target="_blank"
+                      class="flex items-center justify-center gap-1 bg-gray-700 hover:bg-gray-600 text-white px-3 py-1.5 rounded text-sm transition w-[calc(50%-0.375rem)] sm:w-auto"
+                    >
+                      <i data-feather="github" class="w-4 h-4"></i>
+                      <span>View Code</span>
+                    </a>
+                    <a
+                      href="https://securetotp.netlify.app/"
+                      target="_blank"
+                      class="flex items-center justify-center gap-1 bg-teal-600 hover:bg-teal-700 text-white px-3 py-1.5 rounded text-sm transition w-[calc(50%-0.375rem)] sm:w-auto"
+                    >
+                      <i data-feather="external-link" class="w-4 h-4"></i>
+                      <span>Live Demo</span>
+                    </a>
+                    <a
+                      href="./projects/securetotp.html"
+                      target="_blank"
+                      class="flex items-center justify-center gap-1 bg-blue-600 hover:bg-blue-700 text-white px-3 py-1.5 rounded text-sm transition mt-2 sm:mt-0 w-full sm:w-auto"
+                    >
+                      <i data-feather="file-text" class="w-4 h-4"></i>
+                      <span>Project Info</span>
+                    </a>
+                  </div>
+                </section>
+              </div>
+            </article>
 
-
-           <article class="flex flex-col h-full rounded-lg overflow-hidden bg-[#181818] border border-gray-700 shadow-lg">
-            <!-- Image Carousel (replace images as needed) -->
-            <div class="relative w-full" style="padding-bottom: 56.25%">
-              <div class="project-carousel absolute top-0 left-0 w-full h-full">
-               <img
+            <article
+              class="flex flex-col h-full rounded-lg overflow-hidden bg-[#181818] border border-gray-700 shadow-lg"
+            >
+              <!-- Image Carousel (replace images as needed) -->
+              <div class="relative w-full" style="padding-bottom: 56.25%">
+                <div
+                  class="project-carousel absolute top-0 left-0 w-full h-full"
+                >
+                  <img
                     src="https://imgs.search.brave.com/Ncl_kXAdTRRmzmFldVjokLGL3vL7VYSKnLBE1G2boBM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTAw/ODcxOTc0NC9waG90/by93b29kLWJsb2Nr/LWN1YmUtcHV0LXRo/ZS1mcm9udC1jb21w/dXRlci1rZXlib2Fy/ZC13aXRoLXdvcmQt/YmxvZy1hbmQtZW1w/dHktY29weS1zcGFj/ZS1mb3IteW91ci5q/cGc_cz02MTJ4NjEy/Jnc9MCZrPTIwJmM9/RjNvaWkyMXlkcDVa/TWxPYTNDYXJEaVJw/T0JJMkZqMFlfTTVK/LUMzZkhwQT0"
                     alt="Blogging Website Homepage"
                     class="absolute top-0 left-0 w-full h-full object-cover active"
@@ -5889,9 +6210,11 @@
                     alt="Blogging Website Post"
                     class="absolute top-0 left-0 w-full h-full object-cover hidden"
                   />
-                <!-- Navigation Dots -->
-                <div class="absolute bottom-2 left-0 right-0 flex justify-center gap-1">
-                  <button
+                  <!-- Navigation Dots -->
+                  <div
+                    class="absolute bottom-2 left-0 right-0 flex justify-center gap-1"
+                  >
+                    <button
                       class="w-2 h-2 rounded-full bg-white opacity-100 project-dot"
                       data-index="0"
                     ></button>
@@ -5902,343 +6225,471 @@
                     <button
                       class="w-2 h-2 rounded-full bg-white opacity-50 project-dot"
                       data-index="2"
-                    ></button>     </div>
-                <!-- Navigation Arrows -->
-                <button class="absolute top-1/2 left-2 transform -translate-y-1/2 bg-black bg-opacity-50 rounded-full p-1 project-prev">
-                  <i data-feather="chevron-left" class="w-4 h-4"></i>
-                </button>
-                <button class="absolute top-1/2 right-2 transform -translate-y-1/2 bg-black bg-opacity-50 rounded-full p-1 project-next">
-                  <i data-feather="chevron-right" class="w-4 h-4"></i>
-                </button>
-              </div>
-            </div>
-            <div class="p-6 flex flex-col gap-4 flex-grow">
-              <!-- Project Title -->
-              <header class="flex items-center gap-2">
-                <svg class="w-5 h-5 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 4h2a2 2 0 012 2v14a2 2 0 01-2 2H6a2 2 0 01-2-2V6a2 2 0 012-2h2"></path>
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 2v4m8-4v4M4 10h16" />
-                </svg>
-                <h3 class="text-lg font-semibold">Blogging Website</h3>
-              </header>
-
-              <!-- About Section -->
-              <section>
-                <h4 class="font-semibold text-base mb-1 text-teal-400">About</h4>
-                <p class="text-sm text-gray-200">
-                A simple blog project enabling users to create, read, update,
-                  and delete (CRUD) blog posts from markdown, with
-                  authentication features to secure user accounts and manage
-                  access.   </p>
-              </section>
-
-              <!-- Tech Stack Section -->
-              <section>
-                <h4 class="font-semibold text-base mb-1 text-teal-400">Tech Stack</h4>
-                <ul class="flex flex-wrap gap-2 mb-2">
-                                  <div
-                    class="tech-tag bg-gray-700 text-xs px-2 py-1 rounded hover:bg-gray-600"
-                  >
-                    Java 21
+                    ></button>
                   </div>
-                  <div
-                    class="tech-tag bg-gray-700 text-xs px-2 py-1 rounded hover:bg-gray-600"
+                  <!-- Navigation Arrows -->
+                  <button
+                    class="absolute top-1/2 left-2 transform -translate-y-1/2 bg-black bg-opacity-50 rounded-full p-1 project-prev"
                   >
-                    Spring Boot 3.3.1
-                  </div>
-                  <div
-                    class="tech-tag bg-gray-700 text-xs px-2 py-1 rounded hover:bg-gray-600"
+                    <i data-feather="chevron-left" class="w-4 h-4"></i>
+                  </button>
+                  <button
+                    class="absolute top-1/2 right-2 transform -translate-y-1/2 bg-black bg-opacity-50 rounded-full p-1 project-next"
                   >
-                    Thymeleaf
-                  </div>
-                  <div
-                    class="tech-tag bg-gray-700 text-xs px-2 py-1 rounded hover:bg-gray-600"
-                  >
-                    MongoDB
-                  </div>
-
-                  <div
-                    class="tech-tag bg-gray-700 text-xs px-2 py-1 rounded hover:bg-gray-600"
-                  >
-                    Spring Security
-                  </div>
-                  <div
-                    class="tech-tag bg-gray-700 text-xs px-2 py-1 rounded hover:bg-gray-600"
-                  >
-                    SSO Authentication
-                  </div>
-
-                  <div
-                    class="tech-tag bg-gray-700 text-xs px-2 py-1 rounded hover:bg-gray-600"
-                  >
-                    JavaScript
-                  </div>
-                  <div
-                    class="tech-tag bg-gray-700 text-xs px-2 py-1 rounded hover:bg-gray-600"
-                  >
-                    Maven
-                  </div>
-                  <div
-                    class="tech-tag bg-gray-700 text-xs px-2 py-1 rounded hover:bg-gray-600"
-                  >
-                    html
-                  </div>
-                  <div
-                    class="tech-tag bg-gray-700 text-xs px-2 py-1 rounded hover:bg-gray-600"
-                  >
-                    css
-                  </div>
-                  <div
-                    class="tech-tag bg-gray-700 text-xs px-2 py-1 rounded hover:bg-gray-600"
-                  >
-                    Docker
-                  </div>
-                  <div
-                    class="tech-tag bg-gray-700 text-xs px-2 py-1 rounded hover:bg-gray-600"
-                  >
-                    Markdown
-                  </div>     </ul>
-              </section>
-
-              <!-- Links Section -->
-              <section>
-                <h4 class="font-semibold text-base mb-1 text-teal-400">Links</h4>
-                <div class="flex flex-wrap gap-3">
-                 <a
-                    href="https://github.com/ig-imanish/BlogZone"
-                    target="_blank"
-                    class="flex items-center justify-center gap-1 bg-gray-700 hover:bg-gray-600 text-white px-3 py-1.5 rounded text-sm transition w-[calc(50%-0.375rem)] sm:w-auto"
-                  >
-                    <i data-feather="github" class="w-4 h-4"></i>
-                    <span>View Code</span>
-                  </a>
-                  <a
-                    href="https://blogzone-vn2t.onrender.com/"
-                    target="_blank"
-                    class="flex items-center justify-center gap-1 bg-teal-600 hover:bg-teal-700 text-white px-3 py-1.5 rounded text-sm transition w-[calc(50%-0.375rem)] sm:w-auto"
-                  >
-                    <i data-feather="external-link" class="w-4 h-4"></i>
-                    <span>Live Demo</span>
-                  </a>
-                  <a
-                    href="./projects/blogZone.html"
-                    target="_blank"
-                    class="flex items-center justify-center gap-1 bg-blue-600 hover:bg-blue-700 text-white px-3 py-1.5 rounded text-sm transition mt-2 sm:mt-0 w-full sm:w-auto"
-                  >
-                    <i data-feather="file-text" class="w-4 h-4"></i>
-                    <span>Project Info</span>
-                  </a>
+                    <i data-feather="chevron-right" class="w-4 h-4"></i>
+                  </button>
                 </div>
-              </section>
-            </div>
-          </article>
-        </section>
+              </div>
+              <div class="p-6 flex flex-col gap-4 flex-grow">
+                <!-- Project Title -->
+                <header class="flex items-center gap-2">
+                  <svg
+                    class="w-5 h-5 text-cyan-400"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M16 4h2a2 2 0 012 2v14a2 2 0 01-2 2H6a2 2 0 01-2-2V6a2 2 0 012-2h2"
+                    ></path>
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M8 2v4m8-4v4M4 10h16"
+                    />
+                  </svg>
+                  <h3 class="text-lg font-semibold">Blogging Website</h3>
+                </header>
 
-      <!-- Project 3rd row -->
+                <!-- About Section -->
+                <section>
+                  <h4 class="font-semibold text-base mb-1 text-teal-400">
+                    About
+                  </h4>
+                  <p class="text-sm text-gray-200">
+                    A simple blog project enabling users to create, read,
+                    update, and delete (CRUD) blog posts from markdown, with
+                    authentication features to secure user accounts and manage
+                    access.
+                  </p>
+                </section>
 
-        <!-- =====================
+                <!-- Tech Stack Section -->
+                <section>
+                  <h4 class="font-semibold text-base mb-1 text-teal-400">
+                    Tech Stack
+                  </h4>
+                  <ul class="flex flex-wrap gap-2 mb-2">
+                    <div
+                      class="tech-tag bg-gray-700 text-xs px-2 py-1 rounded hover:bg-gray-600"
+                    >
+                      Java 21
+                    </div>
+                    <div
+                      class="tech-tag bg-gray-700 text-xs px-2 py-1 rounded hover:bg-gray-600"
+                    >
+                      Spring Boot 3.3.1
+                    </div>
+                    <div
+                      class="tech-tag bg-gray-700 text-xs px-2 py-1 rounded hover:bg-gray-600"
+                    >
+                      Thymeleaf
+                    </div>
+                    <div
+                      class="tech-tag bg-gray-700 text-xs px-2 py-1 rounded hover:bg-gray-600"
+                    >
+                      MongoDB
+                    </div>
+
+                    <div
+                      class="tech-tag bg-gray-700 text-xs px-2 py-1 rounded hover:bg-gray-600"
+                    >
+                      Spring Security
+                    </div>
+                    <div
+                      class="tech-tag bg-gray-700 text-xs px-2 py-1 rounded hover:bg-gray-600"
+                    >
+                      SSO Authentication
+                    </div>
+
+                    <div
+                      class="tech-tag bg-gray-700 text-xs px-2 py-1 rounded hover:bg-gray-600"
+                    >
+                      JavaScript
+                    </div>
+                    <div
+                      class="tech-tag bg-gray-700 text-xs px-2 py-1 rounded hover:bg-gray-600"
+                    >
+                      Maven
+                    </div>
+                    <div
+                      class="tech-tag bg-gray-700 text-xs px-2 py-1 rounded hover:bg-gray-600"
+                    >
+                      html
+                    </div>
+                    <div
+                      class="tech-tag bg-gray-700 text-xs px-2 py-1 rounded hover:bg-gray-600"
+                    >
+                      css
+                    </div>
+                    <div
+                      class="tech-tag bg-gray-700 text-xs px-2 py-1 rounded hover:bg-gray-600"
+                    >
+                      Docker
+                    </div>
+                    <div
+                      class="tech-tag bg-gray-700 text-xs px-2 py-1 rounded hover:bg-gray-600"
+                    >
+                      Markdown
+                    </div>
+                  </ul>
+                </section>
+
+                <!-- Links Section -->
+                <section>
+                  <h4 class="font-semibold text-base mb-1 text-teal-400">
+                    Links
+                  </h4>
+                  <div class="flex flex-wrap gap-3">
+                    <a
+                      href="https://github.com/ig-imanish/BlogZone"
+                      target="_blank"
+                      class="flex items-center justify-center gap-1 bg-gray-700 hover:bg-gray-600 text-white px-3 py-1.5 rounded text-sm transition w-[calc(50%-0.375rem)] sm:w-auto"
+                    >
+                      <i data-feather="github" class="w-4 h-4"></i>
+                      <span>View Code</span>
+                    </a>
+                    <a
+                      href="https://blogzone-vn2t.onrender.com/"
+                      target="_blank"
+                      class="flex items-center justify-center gap-1 bg-teal-600 hover:bg-teal-700 text-white px-3 py-1.5 rounded text-sm transition w-[calc(50%-0.375rem)] sm:w-auto"
+                    >
+                      <i data-feather="external-link" class="w-4 h-4"></i>
+                      <span>Live Demo</span>
+                    </a>
+                    <a
+                      href="./projects/blogZone.html"
+                      target="_blank"
+                      class="flex items-center justify-center gap-1 bg-blue-600 hover:bg-blue-700 text-white px-3 py-1.5 rounded text-sm transition mt-2 sm:mt-0 w-full sm:w-auto"
+                    >
+                      <i data-feather="file-text" class="w-4 h-4"></i>
+                      <span>Project Info</span>
+                    </a>
+                  </div>
+                </section>
+              </div>
+            </article>
+          </section>
+
+          <!-- Project 3rd row -->
+
+          <!-- =====================
           Project Card: QuickRef.me
           Reusable, readable, and structured for easy copy-paste
         ====================== -->
-        <section class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-          <article class="flex flex-col h-full rounded-lg overflow-hidden bg-[#181818] border border-gray-700 shadow-lg">
-            <!-- Image Carousel (replace images as needed) -->
-            <div class="relative w-full" style="padding-bottom: 56.25%">
-              <div class="project-carousel absolute top-0 left-0 w-full h-full">
-                <img
-                  src="https://raw.githubusercontent.com/ig-imanish/BlogZone-Clg-project/refs/heads/main/images/Screenshot%202025-08-17%20114152.png"
-                  alt="Blog Zone Top Screenshot"
-                  class="absolute top-0 left-0 w-full h-full object-cover active"
-                />
-                <img
-                  src="https://raw.githubusercontent.com/ig-imanish/BlogZone-Clg-project/refs/heads/main/images/Screenshot%202025-08-17%20114215.png"
-                  alt="Blog Zone Bottom Screenshot"
-                  class="absolute top-0 left-0 w-full h-full object-cover hidden"
-                />
-                 <img
-                  src="https://raw.githubusercontent.com/ig-imanish/BlogZone-Clg-project/refs/heads/main/images/Screenshot%202025-08-17%20114243.png"
-                  alt="Blog Zone Top Screenshot"
-                  class="absolute top-0 left-0 w-full h-full object-cover active"
-                />
-                <img
-                  src="https://raw.githubusercontent.com/ig-imanish/BlogZone-Clg-project/refs/heads/main/images/Screenshot%202025-08-17%20114304.png"
-                  alt="Blog Zone Bottom Screenshot"
-                  class="absolute top-0 left-0 w-full h-full object-cover hidden"
-                />
-                 <img
-                  src="https://raw.githubusercontent.com/ig-imanish/BlogZone-Clg-project/refs/heads/main/images/Screenshot%202025-08-18%20223254.png"
-                  alt="Blog Zone Create blog Screenshot"
-                  class="absolute top-0 left-0 w-full h-full object-cover active"
-                />
-              
-                <!-- Navigation Dots -->
-                <div class="absolute bottom-2 left-0 right-0 flex justify-center gap-1">
-                  <button class="w-2 h-2 rounded-full bg-white opacity-100 project-dot" data-index="0"></button>
-                  <button class="w-2 h-2 rounded-full bg-white opacity-50 project-dot" data-index="1"></button>
-                    <button class="w-2 h-2 rounded-full bg-white opacity-50 project-dot" data-index="1"></button>
-                      <button class="w-2 h-2 rounded-full bg-white opacity-50 project-dot" data-index="1"></button>
-                        <button class="w-2 h-2 rounded-full bg-white opacity-50 project-dot" data-index="1"></button>
-                </div>
-                <!-- Navigation Arrows -->
-                <button class="absolute top-1/2 left-2 transform -translate-y-1/2 bg-black bg-opacity-50 rounded-full p-1 project-prev">
-                  <i data-feather="chevron-left" class="w-4 h-4"></i>
-                </button>
-                <button class="absolute top-1/2 right-2 transform -translate-y-1/2 bg-black bg-opacity-50 rounded-full p-1 project-next">
-                  <i data-feather="chevron-right" class="w-4 h-4"></i>
-                </button>
-              </div>
-            </div>
-            <div class="p-6 flex flex-col gap-4 flex-grow">
-              <!-- Project Title -->
-              <header class="flex items-center gap-2">
-                <svg class="w-5 h-5 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 4h2a2 2 0 012 2v14a2 2 0 01-2 2H6a2 2 0 01-2-2V6a2 2 0 012-2h2"></path>
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 2v4m8-4v4M4 10h16" />
-                </svg>
-                <h3 class="text-lg font-semibold">Blog Zone</h3>
-              </header>
-
-              <!-- About Section -->
-              <section>
-                <h4 class="font-semibold text-base mb-1 text-teal-400">About</h4>
-                <p class="text-sm text-gray-200">
-               About Blog Zone
-Blog Zone is a modern platform designed to empower writers, bloggers, and content creators to share their stories with the world. We believe that everyone has a unique voice and perspective worth sharing.    </p>
-              </section>
-
-              <!-- Tech Stack Section -->
-              <section>
-                <h4 class="font-semibold text-base mb-1 text-teal-400">Tech Stack</h4>
-                <ul class="flex flex-wrap gap-2 mb-2">
-                  <li class="bg-gray-700 text-xs px-2 py-1 rounded">Html</li>
-                  <li class="bg-gray-700 text-xs px-2 py-1 rounded">CSS</li>
-                  <li class="bg-gray-700 text-xs px-2 py-1 rounded">JavaScript</li>
-                  <li class="bg-gray-700 text-xs px-2 py-1 rounded">NodeJs</li>
-                  <li class="bg-gray-700 text-xs px-2 py-1 rounded">ExpressJs</li>
-                  <li class="bg-gray-700 text-xs px-2 py-1 rounded">JsonWebToken</li>
-                  <li class="bg-gray-700 text-xs px-2 py-1 rounded">MongoDB</li>
-                </ul>
-              </section>
-
-              <!-- Links Section -->
-              <section>
-                <h4 class="font-semibold text-base mb-1 text-teal-400">Links</h4>
-                <div class="flex flex-wrap gap-3">
-                  <a
-                    href="https://github.com/ig-imanish/BlogZone-Clg-project"
-                    target="_blank"
-                    class="flex items-center justify-center gap-1 bg-gray-700 hover:bg-gray-600 text-white px-3 py-1.5 rounded text-sm transition"
-                  >
-                    <i data-feather="github" class="w-4 h-4"></i>
-                    <span>View Code</span>
-                  </a>
-                  <a
-                    href="https://blogzone-clg.netlify.app/"
-                    target="_blank"
-                    class="flex items-center justify-center gap-1 bg-teal-600 hover:bg-teal-700 text-white px-3 py-1.5 rounded text-sm transition"
-                  >
-                    <i data-feather="external-link" class="w-4 h-4"></i>
-                    <span>Live Demo</span>
-                  </a>
-                </div>
-              </section>
-            </div>
-          </article>
-
-
-
-           <article class="flex flex-col h-full rounded-lg overflow-hidden bg-[#181818] border border-gray-700 shadow-lg">
-            <!-- Image Carousel (replace images as needed) -->
-            <div class="relative w-full" style="padding-bottom: 56.25%">
-              <div class="project-carousel absolute top-0 left-0 w-full h-full">
-                <img
-                  src="https://raw.githubusercontent.com/ig-imanish/QuickRef-React-clone/refs/heads/main/img/top.png"
-                  alt="QuickRef.me Top Screenshot"
-                  class="absolute top-0 left-0 w-full h-full object-cover active"
-                />
-                <img
-                  src="https://raw.githubusercontent.com/ig-imanish/QuickRef-React-clone/refs/heads/main/img/bottom.png"
-                  alt="QuickRef.me Bottom Screenshot"
-                  class="absolute top-0 left-0 w-full h-full object-cover hidden"
-                />
-                <!-- Navigation Dots -->
-                <div class="absolute bottom-2 left-0 right-0 flex justify-center gap-1">
-                  <button class="w-2 h-2 rounded-full bg-white opacity-100 project-dot" data-index="0"></button>
-                  <button class="w-2 h-2 rounded-full bg-white opacity-50 project-dot" data-index="1"></button>
-                </div>
-                <!-- Navigation Arrows -->
-                <button class="absolute top-1/2 left-2 transform -translate-y-1/2 bg-black bg-opacity-50 rounded-full p-1 project-prev">
-                  <i data-feather="chevron-left" class="w-4 h-4"></i>
-                </button>
-                <button class="absolute top-1/2 right-2 transform -translate-y-1/2 bg-black bg-opacity-50 rounded-full p-1 project-next">
-                  <i data-feather="chevron-right" class="w-4 h-4"></i>
-                </button>
-              </div>
-            </div>
-            <div class="p-6 flex flex-col gap-4 flex-grow">
-              <!-- Project Title -->
-              <header class="flex items-center gap-2">
-                <svg class="w-5 h-5 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 4h2a2 2 0 012 2v14a2 2 0 01-2 2H6a2 2 0 01-2-2V6a2 2 0 012-2h2"></path>
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 2v4m8-4v4M4 10h16" />
-                </svg>
-                <h3 class="text-lg font-semibold">QuickRef.me UI Clone</h3>
-              </header>
-
-              <!-- About Section -->
-              <section>
-                <h4 class="font-semibold text-base mb-1 text-teal-400">About</h4>
-                <p class="text-sm text-gray-200">
-                  A web-based clone of quickref.me UI , designed to provide concise and easy-to-navigate programming reference sheets. This project is built for learning and practicing modern web development skills.
-                </p>
-              </section>
-
-              <!-- Tech Stack Section -->
-              <section>
-                <h4 class="font-semibold text-base mb-1 text-teal-400">Tech Stack</h4>
-                <ul class="flex flex-wrap gap-2 mb-2">
-                  <li class="bg-gray-700 text-xs px-2 py-1 rounded">React</li>
-                  <li class="bg-gray-700 text-xs px-2 py-1 rounded">CSS</li>
-                  <li class="bg-gray-700 text-xs px-2 py-1 rounded">JavaScript</li>
-                  <li class="bg-gray-700 text-xs px-2 py-1 rounded">Vite</li>                 
-                </ul>
-              </section>
-
-              <!-- Links Section -->
-              <section>
-                <h4 class="font-semibold text-base mb-1 text-teal-400">Links</h4>
-                <div class="flex flex-wrap gap-3">
-                  <a
-                    href="https://github.com/ig-imanish/QuickRef-React-clone"
-                    target="_blank"
-                    class="flex items-center justify-center gap-1 bg-gray-700 hover:bg-gray-600 text-white px-3 py-1.5 rounded text-sm transition"
-                  >
-                    <i data-feather="github" class="w-4 h-4"></i>
-                    <span>View Code</span>
-                  </a>
-                  <a
-                    href="https://quickref.netlify.app/"
-                    target="_blank"
-                    class="flex items-center justify-center gap-1 bg-teal-600 hover:bg-teal-700 text-white px-3 py-1.5 rounded text-sm transition"
-                  >
-                    <i data-feather="external-link" class="w-4 h-4"></i>
-                    <span>Live Demo</span>
-                  </a>
-                </div>
-              </section>
-            </div>
-          </article>
-        </section>
-
-
-          <section class="grid grid-cols-1 md:grid-cols-2 gap-6 ">
+          <section class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
             <article
-  class="flex flex-col h-full rounded-lg overflow-hidden bg-[#181818] border border-gray-700 shadow-lg"
->
-  <!-- Image Carousel (replace images as needed) -->
-  <div class="relative w-full" style="padding-bottom: 56.25%">
-    <div class="project-carousel absolute top-0 left-0 w-full h-full">
-     <img
+              class="flex flex-col h-full rounded-lg overflow-hidden bg-[#181818] border border-gray-700 shadow-lg"
+            >
+              <!-- Image Carousel (replace images as needed) -->
+              <div class="relative w-full" style="padding-bottom: 56.25%">
+                <div
+                  class="project-carousel absolute top-0 left-0 w-full h-full"
+                >
+                  <img
+                    src="https://raw.githubusercontent.com/ig-imanish/BlogZone-Clg-project/refs/heads/main/images/Screenshot%202025-08-17%20114152.png"
+                    alt="Blog Zone Top Screenshot"
+                    class="absolute top-0 left-0 w-full h-full object-cover active"
+                  />
+                  <img
+                    src="https://raw.githubusercontent.com/ig-imanish/BlogZone-Clg-project/refs/heads/main/images/Screenshot%202025-08-17%20114215.png"
+                    alt="Blog Zone Bottom Screenshot"
+                    class="absolute top-0 left-0 w-full h-full object-cover hidden"
+                  />
+                  <img
+                    src="https://raw.githubusercontent.com/ig-imanish/BlogZone-Clg-project/refs/heads/main/images/Screenshot%202025-08-17%20114243.png"
+                    alt="Blog Zone Top Screenshot"
+                    class="absolute top-0 left-0 w-full h-full object-cover active"
+                  />
+                  <img
+                    src="https://raw.githubusercontent.com/ig-imanish/BlogZone-Clg-project/refs/heads/main/images/Screenshot%202025-08-17%20114304.png"
+                    alt="Blog Zone Bottom Screenshot"
+                    class="absolute top-0 left-0 w-full h-full object-cover hidden"
+                  />
+                  <img
+                    src="https://raw.githubusercontent.com/ig-imanish/BlogZone-Clg-project/refs/heads/main/images/Screenshot%202025-08-18%20223254.png"
+                    alt="Blog Zone Create blog Screenshot"
+                    class="absolute top-0 left-0 w-full h-full object-cover active"
+                  />
+
+                  <!-- Navigation Dots -->
+                  <div
+                    class="absolute bottom-2 left-0 right-0 flex justify-center gap-1"
+                  >
+                    <button
+                      class="w-2 h-2 rounded-full bg-white opacity-100 project-dot"
+                      data-index="0"
+                    ></button>
+                    <button
+                      class="w-2 h-2 rounded-full bg-white opacity-50 project-dot"
+                      data-index="1"
+                    ></button>
+                    <button
+                      class="w-2 h-2 rounded-full bg-white opacity-50 project-dot"
+                      data-index="1"
+                    ></button>
+                    <button
+                      class="w-2 h-2 rounded-full bg-white opacity-50 project-dot"
+                      data-index="1"
+                    ></button>
+                    <button
+                      class="w-2 h-2 rounded-full bg-white opacity-50 project-dot"
+                      data-index="1"
+                    ></button>
+                  </div>
+                  <!-- Navigation Arrows -->
+                  <button
+                    class="absolute top-1/2 left-2 transform -translate-y-1/2 bg-black bg-opacity-50 rounded-full p-1 project-prev"
+                  >
+                    <i data-feather="chevron-left" class="w-4 h-4"></i>
+                  </button>
+                  <button
+                    class="absolute top-1/2 right-2 transform -translate-y-1/2 bg-black bg-opacity-50 rounded-full p-1 project-next"
+                  >
+                    <i data-feather="chevron-right" class="w-4 h-4"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="p-6 flex flex-col gap-4 flex-grow">
+                <!-- Project Title -->
+                <header class="flex items-center gap-2">
+                  <svg
+                    class="w-5 h-5 text-cyan-400"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M16 4h2a2 2 0 012 2v14a2 2 0 01-2 2H6a2 2 0 01-2-2V6a2 2 0 012-2h2"
+                    ></path>
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M8 2v4m8-4v4M4 10h16"
+                    />
+                  </svg>
+                  <h3 class="text-lg font-semibold">Blog Zone</h3>
+                </header>
+
+                <!-- About Section -->
+                <section>
+                  <h4 class="font-semibold text-base mb-1 text-teal-400">
+                    About
+                  </h4>
+                  <p class="text-sm text-gray-200">
+                    About Blog Zone Blog Zone is a modern platform designed to
+                    empower writers, bloggers, and content creators to share
+                    their stories with the world. We believe that everyone has a
+                    unique voice and perspective worth sharing.
+                  </p>
+                </section>
+
+                <!-- Tech Stack Section -->
+                <section>
+                  <h4 class="font-semibold text-base mb-1 text-teal-400">
+                    Tech Stack
+                  </h4>
+                  <ul class="flex flex-wrap gap-2 mb-2">
+                    <li class="bg-gray-700 text-xs px-2 py-1 rounded">Html</li>
+                    <li class="bg-gray-700 text-xs px-2 py-1 rounded">CSS</li>
+                    <li class="bg-gray-700 text-xs px-2 py-1 rounded">
+                      JavaScript
+                    </li>
+                    <li class="bg-gray-700 text-xs px-2 py-1 rounded">
+                      NodeJs
+                    </li>
+                    <li class="bg-gray-700 text-xs px-2 py-1 rounded">
+                      ExpressJs
+                    </li>
+                    <li class="bg-gray-700 text-xs px-2 py-1 rounded">
+                      JsonWebToken
+                    </li>
+                    <li class="bg-gray-700 text-xs px-2 py-1 rounded">
+                      MongoDB
+                    </li>
+                  </ul>
+                </section>
+
+                <!-- Links Section -->
+                <section>
+                  <h4 class="font-semibold text-base mb-1 text-teal-400">
+                    Links
+                  </h4>
+                  <div class="flex flex-wrap gap-3">
+                    <a
+                      href="https://github.com/ig-imanish/BlogZone-Clg-project"
+                      target="_blank"
+                      class="flex items-center justify-center gap-1 bg-gray-700 hover:bg-gray-600 text-white px-3 py-1.5 rounded text-sm transition"
+                    >
+                      <i data-feather="github" class="w-4 h-4"></i>
+                      <span>View Code</span>
+                    </a>
+                    <a
+                      href="https://blogzone-clg.netlify.app/"
+                      target="_blank"
+                      class="flex items-center justify-center gap-1 bg-teal-600 hover:bg-teal-700 text-white px-3 py-1.5 rounded text-sm transition"
+                    >
+                      <i data-feather="external-link" class="w-4 h-4"></i>
+                      <span>Live Demo</span>
+                    </a>
+                  </div>
+                </section>
+              </div>
+            </article>
+
+            <article
+              class="flex flex-col h-full rounded-lg overflow-hidden bg-[#181818] border border-gray-700 shadow-lg"
+            >
+              <!-- Image Carousel (replace images as needed) -->
+              <div class="relative w-full" style="padding-bottom: 56.25%">
+                <div
+                  class="project-carousel absolute top-0 left-0 w-full h-full"
+                >
+                  <img
+                    src="https://raw.githubusercontent.com/ig-imanish/QuickRef-React-clone/refs/heads/main/img/top.png"
+                    alt="QuickRef.me Top Screenshot"
+                    class="absolute top-0 left-0 w-full h-full object-cover active"
+                  />
+                  <img
+                    src="https://raw.githubusercontent.com/ig-imanish/QuickRef-React-clone/refs/heads/main/img/bottom.png"
+                    alt="QuickRef.me Bottom Screenshot"
+                    class="absolute top-0 left-0 w-full h-full object-cover hidden"
+                  />
+                  <!-- Navigation Dots -->
+                  <div
+                    class="absolute bottom-2 left-0 right-0 flex justify-center gap-1"
+                  >
+                    <button
+                      class="w-2 h-2 rounded-full bg-white opacity-100 project-dot"
+                      data-index="0"
+                    ></button>
+                    <button
+                      class="w-2 h-2 rounded-full bg-white opacity-50 project-dot"
+                      data-index="1"
+                    ></button>
+                  </div>
+                  <!-- Navigation Arrows -->
+                  <button
+                    class="absolute top-1/2 left-2 transform -translate-y-1/2 bg-black bg-opacity-50 rounded-full p-1 project-prev"
+                  >
+                    <i data-feather="chevron-left" class="w-4 h-4"></i>
+                  </button>
+                  <button
+                    class="absolute top-1/2 right-2 transform -translate-y-1/2 bg-black bg-opacity-50 rounded-full p-1 project-next"
+                  >
+                    <i data-feather="chevron-right" class="w-4 h-4"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="p-6 flex flex-col gap-4 flex-grow">
+                <!-- Project Title -->
+                <header class="flex items-center gap-2">
+                  <svg
+                    class="w-5 h-5 text-cyan-400"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M16 4h2a2 2 0 012 2v14a2 2 0 01-2 2H6a2 2 0 01-2-2V6a2 2 0 012-2h2"
+                    ></path>
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M8 2v4m8-4v4M4 10h16"
+                    />
+                  </svg>
+                  <h3 class="text-lg font-semibold">QuickRef.me UI Clone</h3>
+                </header>
+
+                <!-- About Section -->
+                <section>
+                  <h4 class="font-semibold text-base mb-1 text-teal-400">
+                    About
+                  </h4>
+                  <p class="text-sm text-gray-200">
+                    A web-based clone of quickref.me UI , designed to provide
+                    concise and easy-to-navigate programming reference sheets.
+                    This project is built for learning and practicing modern web
+                    development skills.
+                  </p>
+                </section>
+
+                <!-- Tech Stack Section -->
+                <section>
+                  <h4 class="font-semibold text-base mb-1 text-teal-400">
+                    Tech Stack
+                  </h4>
+                  <ul class="flex flex-wrap gap-2 mb-2">
+                    <li class="bg-gray-700 text-xs px-2 py-1 rounded">React</li>
+                    <li class="bg-gray-700 text-xs px-2 py-1 rounded">CSS</li>
+                    <li class="bg-gray-700 text-xs px-2 py-1 rounded">
+                      JavaScript
+                    </li>
+                    <li class="bg-gray-700 text-xs px-2 py-1 rounded">Vite</li>
+                  </ul>
+                </section>
+
+                <!-- Links Section -->
+                <section>
+                  <h4 class="font-semibold text-base mb-1 text-teal-400">
+                    Links
+                  </h4>
+                  <div class="flex flex-wrap gap-3">
+                    <a
+                      href="https://github.com/ig-imanish/QuickRef-React-clone"
+                      target="_blank"
+                      class="flex items-center justify-center gap-1 bg-gray-700 hover:bg-gray-600 text-white px-3 py-1.5 rounded text-sm transition"
+                    >
+                      <i data-feather="github" class="w-4 h-4"></i>
+                      <span>View Code</span>
+                    </a>
+                    <a
+                      href="https://quickref.netlify.app/"
+                      target="_blank"
+                      class="flex items-center justify-center gap-1 bg-teal-600 hover:bg-teal-700 text-white px-3 py-1.5 rounded text-sm transition"
+                    >
+                      <i data-feather="external-link" class="w-4 h-4"></i>
+                      <span>Live Demo</span>
+                    </a>
+                  </div>
+                </section>
+              </div>
+            </article>
+          </section>
+
+          <section class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <article
+              class="flex flex-col h-full rounded-lg overflow-hidden bg-[#181818] border border-gray-700 shadow-lg"
+            >
+              <!-- Image Carousel (replace images as needed) -->
+              <div class="relative w-full" style="padding-bottom: 56.25%">
+                <div
+                  class="project-carousel absolute top-0 left-0 w-full h-full"
+                >
+                  <img
                     src="https://raw.githubusercontent.com/ig-imanish/SHORTxURL/refs/heads/main/Screenshot%20(33).png"
                     alt="URL Shortener Screenshot 1"
                     class="absolute top-0 left-0 w-full h-full object-cover active"
@@ -6248,129 +6699,140 @@ Blog Zone is a modern platform designed to empower writers, bloggers, and conten
                     alt="URL Shortener Screenshot 2"
                     class="absolute top-0 left-0 w-full h-full object-cover hidden"
                   />
-      <!-- Navigation Dots -->
-      <div class="absolute bottom-2 left-0 right-0 flex justify-center gap-1">
-        <button
-          class="w-2 h-2 rounded-full bg-white opacity-100 project-dot"
-          data-index="0"
-        ></button>
-        <button
-          class="w-2 h-2 rounded-full bg-white opacity-50 project-dot"
-          data-index="1"
-        ></button>
-      </div>
-      <!-- Navigation Arrows -->
-      <button
-        class="absolute top-1/2 left-2 transform -translate-y-1/2 bg-black bg-opacity-50 rounded-full p-1 project-prev"
-      >
-        <i data-feather="chevron-left" class="w-4 h-4"></i>
-      </button>
-      <button
-        class="absolute top-1/2 right-2 transform -translate-y-1/2 bg-black bg-opacity-50 rounded-full p-1 project-next"
-      >
-        <i data-feather="chevron-right" class="w-4 h-4"></i>
-      </button>
-    </div>
-  </div>
-  <div class="p-6 flex flex-col gap-4 flex-grow">
-    <!-- Project Title -->
-    <header class="flex items-center gap-2">
-      <svg
-        class="w-5 h-5 text-cyan-400"
-        fill="none"
-        stroke="currentColor"
-        viewBox="0 0 24 24"
-      >
-        <path
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="2"
-          d="M16 4h2a2 2 0 012 2v14a2 2 0 01-2 2H6a2 2 0 01-2-2V6a2 2 0 012-2h2"
-        ></path>
-        <path
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="2"
-          d="M8 2v4m8-4v4M4 10h16"
-        />
-      </svg>
-      <h3 class="text-lg font-semibold">URL Shortener</h3>
-    </header>
+                  <!-- Navigation Dots -->
+                  <div
+                    class="absolute bottom-2 left-0 right-0 flex justify-center gap-1"
+                  >
+                    <button
+                      class="w-2 h-2 rounded-full bg-white opacity-100 project-dot"
+                      data-index="0"
+                    ></button>
+                    <button
+                      class="w-2 h-2 rounded-full bg-white opacity-50 project-dot"
+                      data-index="1"
+                    ></button>
+                  </div>
+                  <!-- Navigation Arrows -->
+                  <button
+                    class="absolute top-1/2 left-2 transform -translate-y-1/2 bg-black bg-opacity-50 rounded-full p-1 project-prev"
+                  >
+                    <i data-feather="chevron-left" class="w-4 h-4"></i>
+                  </button>
+                  <button
+                    class="absolute top-1/2 right-2 transform -translate-y-1/2 bg-black bg-opacity-50 rounded-full p-1 project-next"
+                  >
+                    <i data-feather="chevron-right" class="w-4 h-4"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="p-6 flex flex-col gap-4 flex-grow">
+                <!-- Project Title -->
+                <header class="flex items-center gap-2">
+                  <svg
+                    class="w-5 h-5 text-cyan-400"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M16 4h2a2 2 0 012 2v14a2 2 0 01-2 2H6a2 2 0 01-2-2V6a2 2 0 012-2h2"
+                    ></path>
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M8 2v4m8-4v4M4 10h16"
+                    />
+                  </svg>
+                  <h3 class="text-lg font-semibold">URL Shortener</h3>
+                </header>
 
-    <!-- About Section -->
-    <section>
-      <h4 class="font-semibold text-base mb-1 text-teal-400">About</h4>
-      <p class="text-sm text-gray-200">
-           SHORTxURL is a Spring Boot web project that provides URL
-                  shortening functionality. It shortens your long URL with a
-                  custom name! Making sharing easier.
-           
-      </p>
-    </section>
+                <!-- About Section -->
+                <section>
+                  <h4 class="font-semibold text-base mb-1 text-teal-400">
+                    About
+                  </h4>
+                  <p class="text-sm text-gray-200">
+                    SHORTxURL is a Spring Boot web project that provides URL
+                    shortening functionality. It shortens your long URL with a
+                    custom name! Making sharing easier.
+                  </p>
+                </section>
 
-    <!-- Tech Stack Section -->
-    <section>
-      <h4 class="font-semibold text-base mb-1 text-teal-400">Tech Stack</h4>
-      <ul class="flex flex-wrap gap-2 mb-2">
-           <span class="bg-gray-700 text-xs px-2 py-1 rounded"
-                    >Spring Boot</span
-                  >
-                  <span class="bg-gray-700 text-xs px-2 py-1 rounded"
-                    >Thymeleaf</span
-                  >
-                  <span class="bg-gray-700 text-xs px-2 py-1 rounded"
-                    >MongoDB</span
-                  >
-                  <span class="bg-gray-700 text-xs px-2 py-1 rounded"
-                    >html</span
-                  >
-                  <span class="bg-gray-700 text-xs px-2 py-1 rounded">css</span>
-                  <span class="bg-gray-700 text-xs px-2 py-1 rounded"
-                    >Docker</span
-                  >
-      </ul>
-    </section>
+                <!-- Tech Stack Section -->
+                <section>
+                  <h4 class="font-semibold text-base mb-1 text-teal-400">
+                    Tech Stack
+                  </h4>
+                  <ul class="flex flex-wrap gap-2 mb-2">
+                    <span class="bg-gray-700 text-xs px-2 py-1 rounded"
+                      >Spring Boot</span
+                    >
+                    <span class="bg-gray-700 text-xs px-2 py-1 rounded"
+                      >Thymeleaf</span
+                    >
+                    <span class="bg-gray-700 text-xs px-2 py-1 rounded"
+                      >MongoDB</span
+                    >
+                    <span class="bg-gray-700 text-xs px-2 py-1 rounded"
+                      >html</span
+                    >
+                    <span class="bg-gray-700 text-xs px-2 py-1 rounded"
+                      >css</span
+                    >
+                    <span class="bg-gray-700 text-xs px-2 py-1 rounded"
+                      >Docker</span
+                    >
+                  </ul>
+                </section>
 
-    <!-- Links Section -->
-    <section>
-      <h4 class="font-semibold text-base mb-1 text-teal-400">Links</h4>
-      <div class="flex flex-wrap gap-3">
-         <a
-                    href="https://github.com/ig-imanish/SHORTxURL"
-                    target="_blank"
-                    class="flex items-center justify-center gap-1 bg-gray-700 hover:bg-gray-600 text-white px-3 py-1.5 rounded text-sm transition w-[calc(50%-0.375rem)] sm:w-auto"
-                  >
-                    <i data-feather="github" class="w-4 h-4"></i>
-                    <span>View Code</span>
-                  </a>
-                  <a
-                    href="https://shortxurl.onrender.com/"
-                    target="_blank"
-                    class="flex items-center justify-center gap-1 bg-teal-600 hover:bg-teal-700 text-white px-3 py-1.5 rounded text-sm transition w-[calc(50%-0.375rem)] sm:w-auto"
-                  >
-                    <i data-feather="external-link" class="w-4 h-4"></i>
-                    <span>Live Demo</span>
-                  </a>
-                  <a
-                    href="./projects/shortxurl.html"
-                    target="_blank"
-                    class="flex items-center justify-center gap-1 bg-blue-600 hover:bg-blue-700 text-white px-3 py-1.5 rounded text-sm transition mt-2 sm:mt-0 w-full sm:w-auto"
-                  >
-                    <i data-feather="file-text" class="w-4 h-4"></i>
-                    <span>Project Info</span>
-                  </a>
-      </div>
-    </section>
-  </div>
-</article>
+                <!-- Links Section -->
+                <section>
+                  <h4 class="font-semibold text-base mb-1 text-teal-400">
+                    Links
+                  </h4>
+                  <div class="flex flex-wrap gap-3">
+                    <a
+                      href="https://github.com/ig-imanish/SHORTxURL"
+                      target="_blank"
+                      class="flex items-center justify-center gap-1 bg-gray-700 hover:bg-gray-600 text-white px-3 py-1.5 rounded text-sm transition w-[calc(50%-0.375rem)] sm:w-auto"
+                    >
+                      <i data-feather="github" class="w-4 h-4"></i>
+                      <span>View Code</span>
+                    </a>
+                    <a
+                      href="https://shortxurl.onrender.com/"
+                      target="_blank"
+                      class="flex items-center justify-center gap-1 bg-teal-600 hover:bg-teal-700 text-white px-3 py-1.5 rounded text-sm transition w-[calc(50%-0.375rem)] sm:w-auto"
+                    >
+                      <i data-feather="external-link" class="w-4 h-4"></i>
+                      <span>Live Demo</span>
+                    </a>
+                    <a
+                      href="./projects/shortxurl.html"
+                      target="_blank"
+                      class="flex items-center justify-center gap-1 bg-blue-600 hover:bg-blue-700 text-white px-3 py-1.5 rounded text-sm transition mt-2 sm:mt-0 w-full sm:w-auto"
+                    >
+                      <i data-feather="file-text" class="w-4 h-4"></i>
+                      <span>Project Info</span>
+                    </a>
+                  </div>
+                </section>
+              </div>
+            </article>
 
-<article
-  class="flex flex-col h-full rounded-lg overflow-hidden bg-[#181818] border border-gray-700 shadow-lg"
->
-  <!-- Image Carousel (replace images as needed) -->
-  <div class="relative w-full" style="padding-bottom: 56.25%">
-    <div class="project-carousel absolute top-0 left-0 w-full h-full">
-        <img
+            <article
+              class="flex flex-col h-full rounded-lg overflow-hidden bg-[#181818] border border-gray-700 shadow-lg"
+            >
+              <!-- Image Carousel (replace images as needed) -->
+              <div class="relative w-full" style="padding-bottom: 56.25%">
+                <div
+                  class="project-carousel absolute top-0 left-0 w-full h-full"
+                >
+                  <img
                     src="https://raw.githubusercontent.com/ig-imanish/SimpleChatBot/refs/heads/main/pic.png"
                     alt="ChatBot Desktop"
                     class="absolute top-0 left-0 w-full h-full object-cover active"
@@ -6380,111 +6842,120 @@ Blog Zone is a modern platform designed to empower writers, bloggers, and conten
                     alt="ChatBot Mobile"
                     class="absolute top-0 left-0 w-full h-full object-cover hidden"
                   />
-      <!-- Navigation Dots -->
-      <div class="absolute bottom-2 left-0 right-0 flex justify-center gap-1">
-        <button
-          class="w-2 h-2 rounded-full bg-white opacity-100 project-dot"
-          data-index="0"
-        ></button>
-        <button
-          class="w-2 h-2 rounded-full bg-white opacity-50 project-dot"
-          data-index="1"
-        ></button>
-      </div>
-      <!-- Navigation Arrows -->
-      <button
-        class="absolute top-1/2 left-2 transform -translate-y-1/2 bg-black bg-opacity-50 rounded-full p-1 project-prev"
-      >
-        <i data-feather="chevron-left" class="w-4 h-4"></i>
-      </button>
-      <button
-        class="absolute top-1/2 right-2 transform -translate-y-1/2 bg-black bg-opacity-50 rounded-full p-1 project-next"
-      >
-        <i data-feather="chevron-right" class="w-4 h-4"></i>
-      </button>
-    </div>
-  </div>
-  <div class="p-6 flex flex-col gap-4 flex-grow">
-    <!-- Project Title -->
-    <header class="flex items-center gap-2">
-      <svg
-        class="w-5 h-5 text-cyan-400"
-        fill="none"
-        stroke="currentColor"
-        viewBox="0 0 24 24"
-      >
-        <path
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="2"
-          d="M16 4h2a2 2 0 012 2v14a2 2 0 01-2 2H6a2 2 0 01-2-2V6a2 2 0 012-2h2"
-        ></path>
-        <path
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="2"
-          d="M8 2v4m8-4v4M4 10h16"
-        />
-      </svg>
-      <h3 class="text-lg font-semibold">ChatBot</h3>
-    </header>
-
-    <!-- About Section -->
-    <section>
-      <h4 class="font-semibold text-base mb-1 text-teal-400">About</h4>
-      <p class="text-sm text-gray-200">
-       Simple ChatBot Using Java Servlet JSP.
-      </p>
-    </section>
-
-    <!-- Tech Stack Section -->
-    <section>
-      <h4 class="font-semibold text-base mb-1 text-teal-400">Tech Stack</h4>
-      <ul class="flex flex-wrap gap-2 mb-2">
-        <span class="bg-gray-700 text-xs px-2 py-1 rounded"
-                    >html</span
+                  <!-- Navigation Dots -->
+                  <div
+                    class="absolute bottom-2 left-0 right-0 flex justify-center gap-1"
                   >
-                  <span class="bg-gray-700 text-xs px-2 py-1 rounded">css</span>
-                  <span class="bg-gray-700 text-xs px-2 py-1 rounded">JSP</span>
-                  <span class="bg-gray-700 text-xs px-2 py-1 rounded"
-                    >Servlet</span
+                    <button
+                      class="w-2 h-2 rounded-full bg-white opacity-100 project-dot"
+                      data-index="0"
+                    ></button>
+                    <button
+                      class="w-2 h-2 rounded-full bg-white opacity-50 project-dot"
+                      data-index="1"
+                    ></button>
+                  </div>
+                  <!-- Navigation Arrows -->
+                  <button
+                    class="absolute top-1/2 left-2 transform -translate-y-1/2 bg-black bg-opacity-50 rounded-full p-1 project-prev"
                   >
-      </ul>
-    </section>
-
-    <!-- Links Section -->
-    <section>
-      <h4 class="font-semibold text-base mb-1 text-teal-400">Links</h4>
-      <div class="flex flex-wrap gap-3">
-        <a
-                    href="https://github.com/ig-imanish/SimpleChatBot"
-                    target="_blank"
-                    class="flex items-center justify-center gap-1 bg-gray-700 hover:bg-gray-600 text-white px-3 py-1.5 rounded text-sm transition w-[calc(50%-0.375rem)] sm:w-auto"
+                    <i data-feather="chevron-left" class="w-4 h-4"></i>
+                  </button>
+                  <button
+                    class="absolute top-1/2 right-2 transform -translate-y-1/2 bg-black bg-opacity-50 rounded-full p-1 project-next"
                   >
-                    <i data-feather="github" class="w-4 h-4"></i>
-                    <span>View Code</span>
-                  </a>
-               
-                  <a
-                    href="./projects/chatbot.html"
-                    target="_blank"
-                    class="flex items-center justify-center gap-1 bg-blue-600 hover:bg-blue-700 text-white px-3 py-1.5 rounded text-sm transition mt-2 sm:mt-0 w-full sm:w-auto"
+                    <i data-feather="chevron-right" class="w-4 h-4"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="p-6 flex flex-col gap-4 flex-grow">
+                <!-- Project Title -->
+                <header class="flex items-center gap-2">
+                  <svg
+                    class="w-5 h-5 text-cyan-400"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
                   >
-                    <i data-feather="file-text" class="w-4 h-4"></i>
-                    <span>Project Info</span>
-                  </a>
-      </div>
-    </section>
-  </div>
-</article>
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M16 4h2a2 2 0 012 2v14a2 2 0 01-2 2H6a2 2 0 01-2-2V6a2 2 0 012-2h2"
+                    ></path>
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M8 2v4m8-4v4M4 10h16"
+                    />
+                  </svg>
+                  <h3 class="text-lg font-semibold">ChatBot</h3>
+                </header>
 
+                <!-- About Section -->
+                <section>
+                  <h4 class="font-semibold text-base mb-1 text-teal-400">
+                    About
+                  </h4>
+                  <p class="text-sm text-gray-200">
+                    Simple ChatBot Using Java Servlet JSP.
+                  </p>
+                </section>
 
+                <!-- Tech Stack Section -->
+                <section>
+                  <h4 class="font-semibold text-base mb-1 text-teal-400">
+                    Tech Stack
+                  </h4>
+                  <ul class="flex flex-wrap gap-2 mb-2">
+                    <span class="bg-gray-700 text-xs px-2 py-1 rounded"
+                      >html</span
+                    >
+                    <span class="bg-gray-700 text-xs px-2 py-1 rounded"
+                      >css</span
+                    >
+                    <span class="bg-gray-700 text-xs px-2 py-1 rounded"
+                      >JSP</span
+                    >
+                    <span class="bg-gray-700 text-xs px-2 py-1 rounded"
+                      >Servlet</span
+                    >
+                  </ul>
+                </section>
+
+                <!-- Links Section -->
+                <section>
+                  <h4 class="font-semibold text-base mb-1 text-teal-400">
+                    Links
+                  </h4>
+                  <div class="flex flex-wrap gap-3">
+                    <a
+                      href="https://github.com/ig-imanish/SimpleChatBot"
+                      target="_blank"
+                      class="flex items-center justify-center gap-1 bg-gray-700 hover:bg-gray-600 text-white px-3 py-1.5 rounded text-sm transition w-[calc(50%-0.375rem)] sm:w-auto"
+                    >
+                      <i data-feather="github" class="w-4 h-4"></i>
+                      <span>View Code</span>
+                    </a>
+
+                    <a
+                      href="./projects/chatbot.html"
+                      target="_blank"
+                      class="flex items-center justify-center gap-1 bg-blue-600 hover:bg-blue-700 text-white px-3 py-1.5 rounded text-sm transition mt-2 sm:mt-0 w-full sm:w-auto"
+                    >
+                      <i data-feather="file-text" class="w-4 h-4"></i>
+                      <span>Project Info</span>
+                    </a>
+                  </div>
+                </section>
+              </div>
+            </article>
           </section>
-   
         </div>
       </div>
     </section>
-      <section class="bg-[#111] text-white px-4 py-16">
+    <section class="bg-[#111] text-white px-4 py-16">
       <div class="max-w-6xl mx-auto">
         <div class="text-center mb-8">
           <h2
@@ -6509,11 +6980,11 @@ Blog Zone is a modern platform designed to empower writers, bloggers, and conten
         >
           <div class="mb-8">
             <div class="overflow-x-auto pb-2">
-             <img
-  src="http://ghchart.rshah.org/00ff00/ig-imanish"
-  alt="ig-imanish's Github chart"
-  class="mx-auto rounded-lg shadow-lg w-full max-w-5xl h-auto min-w-[600px] sm:min-w-0 min-h-[80px] max-h-[120px] sm:min-h-[150px] sm:max-h-[200px]"
-/>
+              <img
+                src="http://ghchart.rshah.org/00ff00/ig-imanish"
+                alt="ig-imanish's Github chart"
+                class="mx-auto rounded-lg shadow-lg w-full max-w-5xl h-auto min-w-[600px] sm:min-w-0 min-h-[80px] max-h-[120px] sm:min-h-[150px] sm:max-h-[200px]"
+              />
             </div>
           </div>
           <p class="text-sm text-gray-400 mb-4">Contributions in 2025</p>
@@ -6864,6 +7335,71 @@ Blog Zone is a modern platform designed to empower writers, bloggers, and conten
                 updateCarousel(newIndex);
               }, 5000);
             });
+          }
+        });
+      });
+
+      const mouseStarsContainer = document.getElementById(
+        "mouse-stars-container"
+      );
+      const numStars = 10;
+      const stars = [];
+
+      // Create mouse-following stars
+      for (let i = 0; i < numStars; i++) {
+        const star = document.createElement("div");
+        const sizeClass =
+          i % 3 === 0 ? "large" : i % 2 === 0 ? "medium" : "small";
+        star.className = `mouse-star ${sizeClass}`;
+        star.style.zIndex = "40";
+        mouseStarsContainer.appendChild(star);
+        stars.push({
+          element: star,
+          offsetX: Math.random() * 20 - 10,
+          offsetY: Math.random() * 20 - 10,
+          baseX: 0,
+          baseY: 0,
+          scattering: false,
+        });
+      }
+
+      // Update star positions to follow mouse
+      document.addEventListener("mousemove", (e) => {
+        const navbarHeight = 80; // Match navbar height
+        stars.forEach((star) => {
+          if (!star.scattering) {
+            const x = e.clientX + star.offsetX;
+            const y = e.clientY + star.offsetY;
+            // Prevent stars from appearing in navbar
+            if (y > navbarHeight) {
+              star.element.style.transform = `translate(${x}px, ${y}px)`;
+              star.baseX = x;
+              star.baseY = y;
+            }
+          }
+        });
+      });
+
+      // Scatter stars on click and return to mouse
+      document.addEventListener("click", (e) => {
+        const navbarHeight = 80;
+        if (e.clientY <= navbarHeight) return; // Ignore clicks in navbar
+
+        stars.forEach((star) => {
+          if (!star.scattering) {
+            star.scattering = true;
+            const scatterX = star.baseX + (Math.random() * 100 - 50);
+            const scatterY = star.baseY + (Math.random() * 100 - 50);
+            star.element.classList.add("scatter");
+            star.element.style.transform = `translate(${scatterX}px, ${scatterY}px)`;
+            star.element.style.opacity = "0.3";
+
+            setTimeout(() => {
+              star.scattering = false;
+              star.element.classList.remove("scatter");
+              star.element.style.transform = `translate(${star.baseX}px, ${star.baseY}px)`;
+              star.element.style.opacity = "1";
+            }, 500);
           }
         });
       });
